@@ -1,0 +1,1129 @@
+{
+  "current": {
+    "color_text": "#000000",
+    "color_body_text": "#3b3a40",
+    "color_sale_text": "#67893c",
+    "color_button": "#67893c",
+    "color_text_field_text": "#64626a",
+    "color_text_field_border": "#e8e7e8",
+    "color_borders": "#e8e7e8",
+    "type_header_font": "playfair_display_n4",
+    "type_header_base_size": 28,
+    "type_base_font": "roboto_n4",
+    "type_base_size": 16,
+    "social_twitter_link": "https:\/\/twitter.com\/shopify",
+    "social_facebook_link": "https:\/\/facebook.com\/shopify",
+    "social_pinterest_link": "https:\/\/pinterest.com\/shopify",
+    "social_instagram_link": "http:\/\/instagram.com\/shopify",
+    "social_youtube_link": "https:\/\/www.youtube.com\/shopify",
+    "social_vimeo_link": "https:\/\/vimeo.com\/shopify",
+    "social_linkedin_link": "https:\/\/www.linkedin.com\/feed",
+    "favicon": "shopify:\/\/shop_images\/cpfair-icon-favicon.png",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "left",
+          "logo": "shopify:\/\/shop_images\/CPFair-logo-_4x_aa3f2cb2-a89b-4459-ad1d-f07edec95032.png",
+          "logo_max_width": 172,
+          "main_linklist": "main-menu",
+          "main_linklist_2": "second-menu",
+          "button_label": "Buy Tickets",
+          "button_link": "\/pages\/buy-ticket",
+          "message": false,
+          "home_page_only": true,
+          "message_text": "Announce something here",
+          "color_bg": "#3a3a3a",
+          "color_text": "#ffffff"
+        }
+      },
+      "feature-row": {
+        "type": "feature-row",
+        "disabled": true,
+        "settings": {
+          "layout": "left",
+          "title": "Image with text",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": ""
+        }
+      },
+      "feature-columns": {
+        "type": "feature-columns",
+        "blocks": {
+          "feature-columns-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": ""
+            }
+          },
+          "feature-columns-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": ""
+            }
+          },
+          "feature-columns-2": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "feature-columns-0",
+          "feature-columns-1",
+          "feature-columns-2"
+        ],
+        "settings": {
+          "title": "",
+          "align_text": "left"
+        }
+      },
+      "collection": {
+        "type": "collection",
+        "settings": {
+          "title": "Featured collection",
+          "collection": "frontpage",
+          "grid": 5,
+          "rows": 1,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "quotes": {
+        "type": "quotes",
+        "blocks": {
+          "quotes-0": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          },
+          "quotes-1": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          },
+          "quotes-2": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          }
+        },
+        "block_order": [
+          "quotes-0",
+          "quotes-1",
+          "quotes-2"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "image-bar": {
+        "type": "image-bar",
+        "disabled": true,
+        "blocks": {
+          "image-bar-0": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "cta_label": ""
+            }
+          },
+          "image-bar-1": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "cta_label": ""
+            }
+          },
+          "image-bar-2": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "cta_label": ""
+            }
+          },
+          "901f1de4-e6e1-4aab-9610-597d6cd1b20a": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "image-bar-0",
+          "image-bar-1",
+          "image-bar-2",
+          "901f1de4-e6e1-4aab-9610-597d6cd1b20a"
+        ],
+        "settings": {
+          "section_height": "small"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "092b3e59-6d2b-4d4a-9029-9596eb7081db": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "logo": "shopify:\/\/shop_images\/CPFair-logo-_4x_aa3f2cb2-a89b-4459-ad1d-f07edec95032.png",
+              "text": ""
+            }
+          },
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "title": "For Vendors",
+              "menu": "for-vendors"
+            }
+          },
+          "bb501bb0-e6a6-44c9-9070-3edf383b82ef": {
+            "type": "link_list",
+            "settings": {
+              "title": "For Customers",
+              "menu": "for-customers"
+            }
+          },
+          "96657be1-bcfc-41e0-aeee-a1baf981f862": {
+            "type": "link_list",
+            "settings": {
+              "title": "Company",
+              "menu": "company"
+            }
+          },
+          "48bcf3b4-ea70-4be7-ae81-4054cee2f211": {
+            "type": "link_list",
+            "settings": {
+              "title": "Support",
+              "menu": "support"
+            }
+          }
+        },
+        "block_order": [
+          "092b3e59-6d2b-4d4a-9029-9596eb7081db",
+          "footer-0",
+          "bb501bb0-e6a6-44c9-9070-3edf383b82ef",
+          "96657be1-bcfc-41e0-aeee-a1baf981f862",
+          "48bcf3b4-ea70-4be7-ae81-4054cee2f211"
+        ],
+        "settings": {
+          "show_payment_icons": true,
+          "color_footer_bg": "#e8f7fb",
+          "color_footer_text": "#64626a",
+          "show_locale_selector": true,
+          "show_currency_selector": true
+        }
+      },
+      "16153062075eb8df3a": {
+        "type": "slideshow",
+        "blocks": {
+          "16153062075eb8df3a-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/CPFair-Join-us-the-1st-weekend-may.jpg",
+              "alignment": "left center",
+              "slide_title": "Join us the first weekend of May",
+              "subheading": "Praesent vel porttitor lorem, eu tristique metus. Nulla facilisi. Phasellus fringilla vehicula nunc eget sollicitudin. Nunc cursus gravida purus id volutpat.",
+              "button_label": "Buy Tickets",
+              "button_link": "\/pages\/buy-tickets"
+            }
+          },
+          "16153062075eb8df3a-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/new-in-handcarved-wood.jpg",
+              "alignment": "left center",
+              "slide_icon": "shopify:\/\/shop_images\/gloria-sun-design-icon.png",
+              "slide_title": "New in: Handcarved wood",
+              "subheading": "Praesent vel porttitor lorem, eu tristique metus. Nulla facilisi. Phasellus fringilla vehicula nunc eget sollicitudin. Nunc cursus gravida purus id volutpat.",
+              "button_label": "Learn more",
+              "button_link": "shopify:\/\/pages\/seller-profile"
+            }
+          },
+          "54b7aebb-bacc-4ed7-8f1f-e694de8d4206": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/CPFair-Join-us-the-1st-weekend-may.jpg",
+              "alignment": "center center",
+              "slide_title": "Image slide",
+              "subheading": "Praesent vel porttitor lorem, eu tristique metus. Nulla facilisi. Phasellus fringilla vehicula nunc eget sollicitudin. Nunc cursus gravida purus id volutpat.",
+              "button_label": "Learn more",
+              "button_link": "shopify:\/\/pages\/seller-profile"
+            }
+          },
+          "08d770fa-c3d4-4da5-8676-055c7472f25d": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/new-in-handcarved-wood.jpg",
+              "alignment": "center center",
+              "slide_title": "Tell your brand's story",
+              "subheading": "Praesent vel porttitor lorem, eu tristique metus. Nulla facilisi. Phasellus fringilla vehicula nunc eget sollicitudin. Nunc cursus gravida purus id volutpat.",
+              "button_label": "Read more",
+              "button_link": "shopify:\/\/blogs\/news"
+            }
+          }
+        },
+        "block_order": [
+          "16153062075eb8df3a-0",
+          "16153062075eb8df3a-1",
+          "54b7aebb-bacc-4ed7-8f1f-e694de8d4206",
+          "08d770fa-c3d4-4da5-8676-055c7472f25d"
+        ],
+        "settings": {
+          "slideshow_height": "adapt",
+          "text_size": "large",
+          "text_alignment": "left bottom",
+          "show_overlay": false,
+          "autorotate": true,
+          "autorotate_speed": 7
+        }
+      },
+      "1615468681babc82c7": {
+        "type": "featured-product",
+        "settings": {
+          "title": "Featured Product",
+          "featured_product": "initial-date-disc-necklace",
+          "show_quantity_selector": false,
+          "show_vendor": true,
+          "enable_product_form": false,
+          "enable_payment_button": false,
+          "show_share_buttons": false,
+          "media_size": "medium",
+          "enable_image_zoom": false,
+          "enable_video_looping": false
+        }
+      },
+      "16154687077d1d22a1": {
+        "type": "featured-blog",
+        "settings": {
+          "image_bg": "shopify:\/\/shop_images\/debby-hudsonstay-up-to-day.jpg",
+          "title": "Stay up to date with all of our upcoming events",
+          "blog": "events",
+          "post_limit": 3,
+          "blog_show_author": false,
+          "blog_show_date": true,
+          "show_view_all": false
+        }
+      },
+      "1615471348c56e8dfe": {
+        "type": "feature-vendors",
+        "blocks": {
+          "1615471348c56e8dfe-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/ana-frantz-vendor-1.jpg",
+              "title": "Vendor Name Store",
+              "text": "5.0 (323)",
+              "button_label": "View",
+              "button_link": "shopify:\/\/collections\/frontpage"
+            }
+          },
+          "1615471348c56e8dfe-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/kira-auf-der-heide-vendor-2.jpg",
+              "title": "Vendor Name Store",
+              "text": "5.0 (534)",
+              "button_label": "View",
+              "button_link": "shopify:\/\/products\/product-name"
+            }
+          },
+          "1615471348c56e8dfe-2": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/lilibeth-bustos-linares-vendor-3.jpg",
+              "title": "Add a title or tagline",
+              "text": "5.0 (323)",
+              "button_label": "View",
+              "button_link": "shopify:\/\/collections\/frontpage"
+            }
+          },
+          "1615471348c56e8dfe-3": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/alvaro-o-donnell-vendor-4.jpg",
+              "title": "Vendor Name Store",
+              "text": "5.0 (323)",
+              "button_label": "View",
+              "button_link": "shopify:\/\/collections\/frontpage"
+            }
+          },
+          "1761c77e-6fe3-4f49-82b4-bb525effd55f": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/kira-auf-der-heide-vendor-2.jpg",
+              "title": "Add a title or tagline",
+              "text": "5.0 (128)",
+              "button_label": "View",
+              "button_link": "shopify:\/\/collections\/frontpage"
+            }
+          },
+          "ae0c4719-9a4b-4c1b-a9c3-0f5c49ca75cb": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/ana-frantz-vendor-1.jpg",
+              "title": "Add a title or tagline",
+              "text": "5.0 (323)",
+              "button_label": "View",
+              "button_link": "shopify:\/\/collections\/frontpage"
+            }
+          },
+          "cbda2564-bdff-4464-b032-671b6215c2dc": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/alvaro-o-donnell-vendor-4.jpg",
+              "title": "Vendor Name Store",
+              "text": "5.0 (49)",
+              "button_label": "View",
+              "button_link": "shopify:\/\/collections\/frontpage"
+            }
+          },
+          "8bd31624-c115-46c5-8a49-29dc6b4e6450": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/lilibeth-bustos-linares-vendor-3.jpg",
+              "title": "Title or tagline",
+              "text": "5.0 (323)",
+              "button_label": "View",
+              "button_link": "shopify:\/\/collections\/frontpage"
+            }
+          },
+          "9aaf80c8-1e72-4110-8ccb-eb240898d638": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/alvaro-o-donnell-vendor-4.jpg",
+              "title": "Add a title or tagline",
+              "text": "5.0 (323)",
+              "button_label": "View"
+            }
+          }
+        },
+        "block_order": [
+          "1615471348c56e8dfe-0",
+          "1615471348c56e8dfe-1",
+          "1615471348c56e8dfe-2",
+          "1615471348c56e8dfe-3",
+          "1761c77e-6fe3-4f49-82b4-bb525effd55f",
+          "ae0c4719-9a4b-4c1b-a9c3-0f5c49ca75cb",
+          "cbda2564-bdff-4464-b032-671b6215c2dc",
+          "8bd31624-c115-46c5-8a49-29dc6b4e6450",
+          "9aaf80c8-1e72-4110-8ccb-eb240898d638"
+        ],
+        "settings": {
+          "title": "Our Vendors",
+          "align_text": "center"
+        }
+      },
+      "1615803814d2f01553": {
+        "type": "slideshow-our-comunity",
+        "blocks": {
+          "1615803814d2f01553-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vitolda-klein-Helping-Our-Community.jpg",
+              "alignment": "center center",
+              "slide_title": "Family Schultz,",
+              "subheading": "The cotton picking fair has been part of our family tradition every year, digitalizing it has been the best great news for our family business.",
+              "button_label": "Independent Vendor",
+              "button_link": "shopify:\/\/collections\/frontpage"
+            }
+          },
+          "1615803814d2f01553-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/CPFair-Join-us-the-1st-weekend-may.jpg",
+              "alignment": "center center",
+              "slide_title": "Family Schultz,",
+              "subheading": "Tell your brand's story through images. The cotton picking fair has been part of our family.",
+              "button_label": "Vendor  Independent",
+              "button_link": "shopify:\/\/collections\/frontpage"
+            }
+          }
+        },
+        "block_order": [
+          "1615803814d2f01553-0",
+          "1615803814d2f01553-1"
+        ],
+        "settings": {
+          "slideshow_height": "small",
+          "text_size": "medium",
+          "text_alignment": "left center",
+          "section_title": "Helping Our Community",
+          "show_overlay": false,
+          "autorotate": true,
+          "autorotate_speed": 5
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_quantity_selector": true,
+          "show_vendor": false,
+          "enable_payment_button": false,
+          "show_share_buttons": false,
+          "media_size": "large",
+          "enable_image_zoom": false,
+          "enable_video_looping": false
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "You may also like",
+          "show_vendor": false
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": 4,
+          "rows": 2,
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": true,
+          "tags_enable": true
+        }
+      },
+      "gallery-header": {
+        "type": "gallery-header",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/image_1.png",
+          "title": "Gallery"
+        }
+      },
+      "gallery-content-one": {
+        "type": "gallery-content-one",
+        "blocks": {
+          "f4515f82-b1c9-44b3-b27a-35f693e43083": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253.png"
+            }
+          },
+          "d07a3155-64eb-4b09-9f2d-24a94e90f310": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_1.png"
+            }
+          },
+          "2468a79f-2496-46e5-8810-96c1f9e780b4": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_2.png"
+            }
+          },
+          "a5857838-0eb9-42d9-bde8-e15f1ffa2249": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_3.png"
+            }
+          },
+          "1b159e87-7db0-41aa-851c-65495e874f3f": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_4.png"
+            }
+          },
+          "09669d06-07cb-49ec-917f-a243133f1d5f": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_5.png"
+            }
+          },
+          "ae1ed8cf-1a4c-4cfb-9572-9c5d7ba3e8e4": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_6.png"
+            }
+          },
+          "11791ea3-a496-4afb-8608-94d61ac5c170": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_7.png"
+            }
+          }
+        },
+        "block_order": [
+          "f4515f82-b1c9-44b3-b27a-35f693e43083",
+          "d07a3155-64eb-4b09-9f2d-24a94e90f310",
+          "2468a79f-2496-46e5-8810-96c1f9e780b4",
+          "a5857838-0eb9-42d9-bde8-e15f1ffa2249",
+          "1b159e87-7db0-41aa-851c-65495e874f3f",
+          "09669d06-07cb-49ec-917f-a243133f1d5f",
+          "ae1ed8cf-1a4c-4cfb-9572-9c5d7ba3e8e4",
+          "11791ea3-a496-4afb-8608-94d61ac5c170"
+        ],
+        "settings": {
+          "date": "September 27, 2018",
+          "heading": "Cotton Pickin’ Fair nears",
+          "description": "The Cotton Pickin’ Fair, Georgia’s original AgriTourism Event began in 1972 on the 189 year old Gay family farmstead."
+        }
+      },
+      "gallery-content-two": {
+        "type": "gallery-content-two",
+        "blocks": {
+          "576934b9-7d5c-4f60-85db-506bdc2bf65f": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_8.png"
+            }
+          },
+          "7e635afd-4270-41b0-ae66-9676672df0a8": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_9.png"
+            }
+          },
+          "70fd50c8-fb05-443e-8478-603e46b0969a": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_10.png"
+            }
+          },
+          "fc3f5180-fdc7-4e9a-9f55-0a1d79ff3fb5": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_11.png"
+            }
+          },
+          "74639404-1d36-491e-bcbe-7f2544df602c": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_12.png"
+            }
+          },
+          "9a4706f2-3ca7-4dba-b5a5-fe142760028e": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_13.png"
+            }
+          },
+          "5199d9f4-6f39-4229-9263-c93637645c45": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_14.png"
+            }
+          },
+          "b5e43c0e-64c9-43b2-9213-2644b38f5cc8": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_15.png"
+            }
+          }
+        },
+        "block_order": [
+          "576934b9-7d5c-4f60-85db-506bdc2bf65f",
+          "7e635afd-4270-41b0-ae66-9676672df0a8",
+          "70fd50c8-fb05-443e-8478-603e46b0969a",
+          "fc3f5180-fdc7-4e9a-9f55-0a1d79ff3fb5",
+          "74639404-1d36-491e-bcbe-7f2544df602c",
+          "9a4706f2-3ca7-4dba-b5a5-fe142760028e",
+          "5199d9f4-6f39-4229-9263-c93637645c45",
+          "b5e43c0e-64c9-43b2-9213-2644b38f5cc8"
+        ],
+        "settings": {
+          "date": "April 30, 2018",
+          "heading": "Cotton Pickin' Fair, Madison Homes Tour Kick Off May Festivals",
+          "description": "The west Georgia hamlet of Gay population 89 springs to life with the arrival of May and the spring rendition of the biannual Cotton Pickin’ Fair."
+        }
+      },
+      "gallery-content-three": {
+        "type": "gallery-content-three",
+        "blocks": {
+          "00840ac2-63fc-47ac-8df0-852092417bc0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253.png"
+            }
+          },
+          "dd7ad57e-ecfe-47b8-bd5f-d29bebfa7e4c": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_1.png"
+            }
+          },
+          "e44721a1-b86d-43cc-a05c-385c55cf7a1b": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_2.png"
+            }
+          },
+          "bfb10b12-a30e-48bf-9901-479c2b7e5405": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_3.png"
+            }
+          },
+          "560e4cfb-3de7-4384-9ed3-230e00e77679": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_4.png"
+            }
+          },
+          "60ee294c-6f4c-4b4b-9054-6854c5938688": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_5.png"
+            }
+          },
+          "b7ed81ae-d218-4ef2-be21-a38d7bedeb70": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_6.png"
+            }
+          },
+          "7da1c43c-3a0a-449a-98ef-0fecdd985838": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_253_7.png"
+            }
+          }
+        },
+        "block_order": [
+          "00840ac2-63fc-47ac-8df0-852092417bc0",
+          "dd7ad57e-ecfe-47b8-bd5f-d29bebfa7e4c",
+          "e44721a1-b86d-43cc-a05c-385c55cf7a1b",
+          "bfb10b12-a30e-48bf-9901-479c2b7e5405",
+          "560e4cfb-3de7-4384-9ed3-230e00e77679",
+          "60ee294c-6f4c-4b4b-9054-6854c5938688",
+          "b7ed81ae-d218-4ef2-be21-a38d7bedeb70",
+          "7da1c43c-3a0a-449a-98ef-0fecdd985838"
+        ],
+        "settings": {
+          "date": "September 27, 2018",
+          "heading": "Cotton Pickin’ Fair nears",
+          "description": "The Cotton Pickin’ Fair, Georgia’s original AgriTourism Event began in 1972 on the 189 year old Gay family farmstead."
+        }
+      },
+      "default-banner": {
+        "type": "default-banner",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/image_1_c6e92995-a9d1-4bb2-93ea-1ed6d3016c31.png",
+          "title": "The Cotton Pickin’ Fair",
+          "description": "",
+          "description_html": "<p>Guidelines &amp; Application<\/p><p>Southeast Tourism Society Top Twenty Event<\/p><p>Founding Producer of Distinction, Georgia Tourism Foundation<\/p>"
+        }
+      }
+    },
+    "content_for_index": [
+      "16153062075eb8df3a",
+      "1615471348c56e8dfe",
+      "collection",
+      "1615468681babc82c7",
+      "1615803814d2f01553",
+      "16154687077d1d22a1",
+      "feature-row",
+      "image-bar"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "hero-1": {
+          "type": "hero",
+          "settings": {
+            "hero_size": "large",
+            "text_size": "large"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {}
+        },
+        "feature-columns": {
+          "type": "feature-columns",
+          "blocks": {
+            "feature-columns-0": {
+              "type": "text_block",
+              "settings": {}
+            },
+            "feature-columns-1": {
+              "type": "text_block",
+              "settings": {}
+            },
+            "feature-columns-2": {
+              "type": "text_block",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "feature-columns-0",
+            "feature-columns-1",
+            "feature-columns-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "grid": 4
+          }
+        },
+        "hero-2": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "quotes": {
+          "type": "quotes",
+          "blocks": {
+            "quotes-0": {
+              "type": "quote",
+              "settings": {}
+            },
+            "quotes-1": {
+              "type": "quote",
+              "settings": {}
+            },
+            "quotes-2": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "quotes-0",
+            "quotes-1",
+            "quotes-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "image-bar": {
+          "type": "image-bar",
+          "blocks": {
+            "image-bar-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "image-bar-1": {
+              "type": "image",
+              "settings": {}
+            },
+            "image-bar-2": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "image-bar-0",
+            "image-bar-1",
+            "image-bar-2"
+          ],
+          "settings": {}
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "footer-1": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1"
+          ],
+          "settings": {
+            "show_payment_icons": true
+          }
+        }
+      },
+      "content_for_index": [
+        "hero-1",
+        "feature-row",
+        "feature-columns",
+        "collection",
+        "hero-2",
+        "quotes",
+        "image-bar"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#6d6d6d",
+      "color_sale_text": "#DA2F0C",
+      "color_borders": "#e4e4e4",
+      "color_button": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "color_small_button_text_border": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_text_field_border": "#909090",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#f8f8f8",
+      "type_header_font": "muli_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "muli_n4",
+      "type_base_size": 18,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": 135,
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "slideshow_height": "medium",
+            "text_size": "medium",
+            "autorotate": false,
+            "autorotate_speed": 5
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_vendor": false,
+            "show_share_buttons": true,
+            "media_size": "medium",
+            "enable_image_zoom": true,
+            "enable_video_looping": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": 2,
+            "rows": 2,
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {}
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {}
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "link_list": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {}
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "link_list",
+            "text",
+            "newsletter"
+          ],
+          "settings": {
+            "color_footer_bg": "#f8f8f8",
+            "color_footer_text": "#6d6d6d"
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}

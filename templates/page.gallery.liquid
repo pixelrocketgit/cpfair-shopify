@@ -1,0 +1,21 @@
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+{% section 'gallery-header' %}
+
+{% section 'gallery-content-one' %}
+{% section 'gallery-content-two' %}
+{% section 'gallery-content-three' %}
+
+<script>
+  $(window).load(function(){
+    var viewport_width = $(window).width();
+    if (viewport_width > 767){
+      $('.gallery_images').masonry({
+        itemSelector: '.gallery_image',
+        percentPosition: true,
+        horizontalOrder: false
+      });
+    }
+  });
+
+</script>

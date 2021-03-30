@@ -1,0 +1,27 @@
+<div class="gallery-banner">
+	<img src="{{ section.settings.banner_image | img_url: 'master' }}">
+</div>
+
+<div class="page-width gallery-title">
+  <h1 class="">{{ section.settings.title }}</h1>
+</div>
+
+{% schema %}
+  {
+    "name": "Gallery Header",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "banner_image",
+        "label": "Banner Image"
+      },
+      {
+         "type": "text",
+         "id": "title",
+         "label": "Title",
+         "default": "Gallery"
+      }
+	]
+  }
+{% endschema %}
+

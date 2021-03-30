@@ -1,0 +1,523 @@
+<div class="page-width">
+  {% if section.settings.title != blank %}
+    <div class="section-header text-center">
+      <h2>{{ section.settings.title | escape }}</h2>
+    </div>
+  {% endif %}
+
+  {% assign block_size = section.blocks.size %}
+  {% assign block_size = block_size | minus: 1 %}
+  {% assign panel_size = block_size | divided_by: 8 %}  
+  
+  <div class="feature-vendors__wrapper {% if panel_size == 0 %}single_panel{% endif %}">
+
+    {% for i in (0..panel_size) %}
+
+    {% assign block_title = section.blocks[1] %}
+
+    <div class="feature-vendors__cont panel-{{i}}">
+      {%- assign max_height = 117 -%}
+      {% assign block_start = i | times: 8 %}
+
+      {% assign block_end = i | plus: 1 %}
+      {% assign block_end = block_end | times: 8 %}
+      {% assign block_end = block_end | minus: 1 %}
+
+      {% for block_number in (block_start..block_end) %}
+          {% if block_number > block_size %}
+              {% break %}
+            {% else %}
+              {% assign block = section.blocks[block_number] %}
+              <div class="feature-vendors__item text-{{ section.settings.align_text }}" {{ block.shopify_attributes }}>
+          {% if block.settings.enable_image %}
+            {% if block.settings.image != blank %}
+              {% capture img_id %}TextColumnImage-{{ block.id }}{% endcapture %}
+              {% capture wrapper_id %}TextColumnImageWrapper-{{ block.id }}{% endcapture %}
+              {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+              {%- assign image = block.settings.image -%}
+              
+                {% comment %}
+                <style>
+                    {%- if image.height <= height %}
+                      {% assign maximum_height = image.height %}
+                    {% else %}
+                      {% assign maximum_height = height %}
+                    {% endif -%}
+
+                    {%- assign maximum_width = maximum_height | times: image.aspect_ratio -%}
+
+                    #{{ img_id }} {
+                      max-width: {{ maximum_width }}px;
+                      max-height: {{ maximum_height }}px;
+                    }
+
+                    #{{ wrapper_id }} {
+                      max-width: {{ maximum_width }}px;
+                    }
+                
+                </style>
+                {% endcomment %}
+                
+              <div id="{{ wrapper_id }}" class="feature-row__image-wrapper">
+                <div class="feature__image-wrapper">
+                  {% comment %}
+                  <img id="{{ img_id }}"
+                       class="feature-row__image lazyload"
+                       data-src="{{ img_url }}"
+                       data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                       data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                       data-sizes="auto"
+                       alt="{{ block.settings.image.alt | escape }}">
+                  {% endcomment %}
+                  <img id="{{ img_id }}"
+                       src="{{ block.settings.image | img_url: '180x180' }}"
+                       class="feature-row__image"
+                       data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                       data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                       data-sizes="auto"
+                       alt="{{ block.settings.image.alt | escape }}">
+                </div>
+              </div>
+              <noscript>
+                <p>
+                  {{ block.settings.image | img_url: '480x480', scale: 2 | img_tag: block.settings.image.alt, 'feature-row__image' }}
+                </p>
+              </noscript>
+            {% else %}
+              <p>
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              </p>
+            {% endif %}
+          {% endif %}
+          {% if block.settings.title != blank %}
+            <h3 class="feature-vendors__title">{{ block.settings.title | escape }}</h3>
+          {% endif %}
+          {% if block.settings.text != blank %}
+            <p class="rte-setting"><span class="feature-vendors__star">{% include 'icon-review-star' %}</span> {{ block.settings.text }}</p>
+          {% endif %}
+
+          {% if block.settings.button_label != blank and block.settings.button_link != blank %}
+            {%- capture ariaLabel -%}
+              {{- block.settings.button_label -}}
+              {%- if block.settings.button_link.type == 'frontpage_link' -%}
+                : {{ 'homepage.general.title' | t -}}
+              {%- elsif block.settings.button_link.type == 'catalog_link' -%}
+                : {{ 'collections.catalog.title' | t -}}
+              {%- elsif block.settings.button_link.object.title -%}
+                : {{ block.settings.button_link.object.title -}}
+              {%- endif -%}
+            {%- endcapture -%}
+
+            <a href="{{ block.settings.button_link }}"
+              class="btn btn--link"
+              aria-label="{{ ariaLabel | escape }}">
+              {{- block.settings.button_label | escape -}}
+            </a>
+          {% endif %}
+        </div>
+          {% endif %}
+      {% endfor %}
+    </div>
+
+    {% endfor %}
+  </div>
+    
+    
+  {% if section.blocks.size == 0 %}
+    {% include 'no-blocks' %}
+  {% endif %}
+</div>
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var viewport_width = $(window).width();
+    if (viewport_width > 767){
+      $('.feature-vendors__wrapper').slick({
+        slidesToShow: 1,
+        dots: true,
+        arrows: false,
+        draggable: false
+      });    
+    }
+  });
+</script>
+
+
+{% schema %}
+{
+  "name": "Our Vendors",
+  "class": "index-section our-vendors--section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": {
+        "cs": "Nadpis",
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Heading",
+        "es": "Título",
+        "fi": "Otsake",
+        "fr": "En-tête",
+        "it": "Heading",
+        "ja": "見出し",
+        "ko": "제목",
+        "nb": "Overskrift",
+        "nl": "Kop",
+        "pl": "Nagłówek",
+        "pt-BR": "Título",
+        "pt-PT": "Título",
+        "sv": "Rubrik",
+        "th": "ส่วนหัว",
+        "tr": "Başlık",
+        "vi": "Tiêu đề",
+        "zh-CN": "标题",
+        "zh-TW": "標題"
+      },
+      "default": {
+        "cs": "Text. sloupce s obrázky",
+        "da": "Tekstkolonner med billeder",
+        "de": "Textspalten mit Fotos",
+        "en": "Text columns with images",
+        "es": "Columnas de texto con imágenes",
+        "fi": "Tekstisarakkeet kuvilla",
+        "fr": "Colonnes de texte et images",
+        "it": "Colonne di testo con foto",
+        "ja": "画像付きテキスト列",
+        "ko": "이미지 포함 텍스트 열",
+        "nb": "Tekstkolonner med bilder",
+        "nl": "Tekstkolommen met afbeeldingen",
+        "pl": "Kolumny tekstowe z obrazami",
+        "pt-BR": "Texto em coluna com imagens",
+        "pt-PT": "Colunas texto c/ imagens",
+        "sv": "Textkolumner med bilder",
+        "th": "คอลัมน์ข้อความพร้อมรูปภาพ",
+        "tr": "Görsel içeren metin sütunları",
+        "vi": "Cột văn bản có hình ảnh",
+        "zh-CN": "带有图片的文本列",
+        "zh-TW": "附圖片的文字欄"
+      }
+    },
+    {
+      "type": "select",
+      "id": "align_text",
+      "label": {
+        "cs": "Zarovnání textu",
+        "da": "Tekstjustering",
+        "de": "Textausrichtung",
+        "en": "Text alignment",
+        "es": "Alineación de texto",
+        "fi": "Tekstin tasaus",
+        "fr": "Alignement du texte",
+        "it": "Allineamento del testo",
+        "ja": "テキストアラインメント",
+        "ko": "텍스트 정렬",
+        "nb": "Tekstjustering",
+        "nl": "Tekstuitlijning",
+        "pl": "Wyrównanie tekstu",
+        "pt-BR": "Alinhamento de texto",
+        "pt-PT": "Alinhamento de texto",
+        "sv": "Textjustering",
+        "th": "การจัดตำแหน่งข้อความ",
+        "tr": "Metin hizalaması",
+        "vi": "Căn chỉnh văn bản",
+        "zh-CN": "文本对齐方式",
+        "zh-TW": "文字對齊"
+      },
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": {
+            "cs": "Doleva",
+            "da": "Venstre",
+            "de": "Links",
+            "en": "Left",
+            "es": "Izquierda",
+            "fi": "Vasen",
+            "fr": "Gauche",
+            "it": "Sinistra",
+            "ja": "左",
+            "ko": "왼쪽",
+            "nb": "Venstre",
+            "nl": "Links",
+            "pl": "Do lewej",
+            "pt-BR": "Esquerda",
+            "pt-PT": "Esquerda",
+            "sv": "Vänster",
+            "th": "ด้านซ้าย",
+            "tr": "Sol",
+            "vi": "Bên trái",
+            "zh-CN": "左侧",
+            "zh-TW": "左方"
+          }
+        },
+        {
+          "value": "center",
+          "label": {
+            "cs": "Na střed",
+            "da": "Centreret",
+            "de": "Mittig",
+            "en": "Centered",
+            "es": "Centrado",
+            "fi": "Keskitetty",
+            "fr": "Centré",
+            "it": "Centrato",
+            "ja": "中央揃え",
+            "ko": "센터 맞추기",
+            "nb": "Sentrert",
+            "nl": "Gecentreerd",
+            "pl": "Wyśrodkowane",
+            "pt-BR": "Centralizado",
+            "pt-PT": "Centrado",
+            "sv": "Centrera",
+            "th": "ตรงกลาง",
+            "tr": "Orta",
+            "vi": "Giữa",
+            "zh-CN": "居中",
+            "zh-TW": "置中"
+          }
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": {
+        "cs": "Sloupec",
+        "da": "Kolonne",
+        "de": "Spalte",
+        "en": "Column",
+        "es": "Columna",
+        "fi": "Sarake",
+        "fr": "Colonne",
+        "it": "Colonna",
+        "ja": "列",
+        "ko": "칼럼",
+        "nb": "Kolonne",
+        "nl": "Kolom",
+        "pl": "Kolumna",
+        "pt-BR": "Coluna",
+        "pt-PT": "Coluna",
+        "sv": "Kolumn",
+        "th": "คอลัมน์",
+        "tr": "Sütun",
+        "vi": "Cột",
+        "zh-CN": "列",
+        "zh-TW": "欄"
+      },
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "enable_image",
+          "label": {
+            "cs": "Zobrazit obrázek",
+            "da": "Vis billede",
+            "de": "Foto anzeigen",
+            "en": "Show image",
+            "es": "Mostrar imagen",
+            "fi": "Näytä kuva",
+            "fr": "Afficher l'image",
+            "it": "Mostra immagine",
+            "ja": "画像を表示する",
+            "ko": "이미지 표시",
+            "nb": "Vis bilde",
+            "nl": "Toon afbeelding",
+            "pl": "Pokaż obraz",
+            "pt-BR": "Exibir imagem",
+            "pt-PT": "Mostrar imagem",
+            "sv": "Visa bild",
+            "th": "แสดงรูปภาพ",
+            "tr": "Görseli göster",
+            "vi": "Hiển thị hình ảnh",
+            "zh-CN": "显示图片",
+            "zh-TW": "顯示圖片"
+          },
+          "default": true
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": {
+            "cs": "Obrázek",
+            "da": "Billede",
+            "de": "Foto",
+            "en": "Image",
+            "es": "Imagen",
+            "fi": "Kuva",
+            "fr": "Image",
+            "it": "Immagine",
+            "ja": "画像",
+            "ko": "이미지",
+            "nb": "Bilde",
+            "nl": "Afbeelding",
+            "pl": "Obraz",
+            "pt-BR": "Imagem",
+            "pt-PT": "Imagem",
+            "sv": "Bild",
+            "th": "รูปภาพ",
+            "tr": "Görsel",
+            "vi": "Hình ảnh",
+            "zh-CN": "图片",
+            "zh-TW": "圖片"
+          }
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": {
+            "cs": "Nadpis",
+            "da": "Overskrift",
+            "de": "Titel",
+            "en": "Heading",
+            "es": "Título",
+            "fi": "Otsake",
+            "fr": "En-tête",
+            "it": "Heading",
+            "ja": "見出し",
+            "ko": "제목",
+            "nb": "Overskrift",
+            "nl": "Kop",
+            "pl": "Nagłówek",
+            "pt-BR": "Título",
+            "pt-PT": "Título",
+            "sv": "Rubrik",
+            "th": "ส่วนหัว",
+            "tr": "Başlık",
+            "vi": "Tiêu đề",
+            "zh-CN": "标题",
+            "zh-TW": "標題"
+          },
+          "default": {
+            "cs": "Přidejte nadpis nebo slogan",
+            "da": "Tilføj en titel eller et slogan",
+            "de": "Titel oder Text hinzufügen",
+            "en": "Add a title or tagline",
+            "es": "Agregar un título o eslogan",
+            "fi": "Lisää otsikko tai iskulause",
+            "fr": "Ajouter un titre ou un slogan",
+            "it": "Aggiungi un titolo o una tagline",
+            "ja": "タイトルまたはキャッチコピーを追加する",
+            "ko": "제목 또는 슬로건 추가",
+            "nb": "Legg til en tittel eller er slagord",
+            "nl": "Voeg een titel of een slogan toe",
+            "pl": "Dodaj tytuł lub slogan",
+            "pt-BR": "Adicione um título ou slogan",
+            "pt-PT": "Adicionar título ou slogan",
+            "sv": "Lägg till en titel eller tagline",
+            "th": "เพิ่มชื่อเรื่องหรือสโลแกน",
+            "tr": "Başlık ve slogan ekleyin",
+            "vi": "Thêm tiêu đề hoặc câu đúc kết",
+            "zh-CN": "添加标题或标语",
+            "zh-TW": "新增標題或標語"
+          }
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Review text",
+          "default": "5.0 (323)"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": {
+            "cs": "Text tlačítka",
+            "da": "Knaptekst",
+            "de": "Button-Name",
+            "en": "Button label",
+            "es": "Etiqueta de botón",
+            "fi": "Tekstipainike",
+            "fr": "Texte du bouton",
+            "it": "Etichetta pulsante",
+            "ja": "ボタンのラベル",
+            "ko": "버튼 레이블",
+            "nb": "Knappetikett",
+            "nl": "Knoplabel",
+            "pl": "Przycisk z etykietą",
+            "pt-BR": "Etiqueta de botão",
+            "pt-PT": "Etiqueta do botão",
+            "sv": "Knappetikett",
+            "th": "ป้ายกำกับปุ่ม",
+            "tr": "Düğme etiketi",
+            "vi": "Nhãn nút",
+            "zh-CN": "按钮标签",
+            "zh-TW": "按鈕標籤"
+          }
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": {
+            "cs": "Tlačítkový odkaz",
+            "da": "Knaplink",
+            "de": "Button-Link",
+            "en": "Button link",
+            "es": "Enlace de botón",
+            "fi": "Painikelinkki",
+            "fr": "Lien du bouton",
+            "it": "Link pulsante",
+            "ja": "ボタンのリンク",
+            "ko": "버튼 링크",
+            "nb": "Kobling for knapp",
+            "nl": "Knoplink",
+            "pl": "Link przycisku",
+            "pt-BR": "Link de botão",
+            "pt-PT": "Ligação do botão",
+            "sv": "Knapplänk",
+            "th": "ลิงก์ปุ่ม",
+            "tr": "Düğme bağlantısı",
+            "vi": "Liên kết trên nút",
+            "zh-CN": "按钮链接",
+            "zh-TW": "按鈕連結"
+          }
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Our Vendors",
+      "category": {
+        "cs": "Text",
+        "da": "Tekst",
+        "de": "Text",
+        "en": "Text",
+        "es": "Texto",
+        "fi": "Teksti",
+        "fr": "Texte",
+        "it": "Testo",
+        "ja": "テキスト",
+        "ko": "텍스트",
+        "nb": "Tekst",
+        "nl": "Tekst",
+        "pl": "Tekst",
+        "pt-BR": "Texto",
+        "pt-PT": "Texto",
+        "sv": "Text",
+        "th": "ข้อความ",
+        "tr": "Metin",
+        "vi": "Văn bản",
+        "zh-CN": "文本",
+        "zh-TW": "文字"
+      },
+      "blocks": [
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
