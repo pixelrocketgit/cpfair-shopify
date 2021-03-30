@@ -18,6 +18,9 @@
 .template-page .main-content{
 	padding-top: 0;
 }
+a{
+  cursor: pointer;
+}
 @media screen and (max-width: 749px){
   .grid{
   	margin-left: 0;
@@ -932,10 +935,7 @@
   	max-width: 528px;
 }
 @media screen and (min-width: 1200px){
-  .banner-container .page-width{
-  	max-width: 1310px;
-    width: 100%;
-  }
+
 }
 @media screen and (max-width: 767px){
   .banner-container{
@@ -955,3 +955,240 @@
 }
 
 /* 6. Application Page */
+.page-sidebar-main{
+  max-width: 730px;
+}
+.page_content{
+  padding-top: 4.5rem;
+}
+.page_content p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #64626A;  
+}
+.sidebar_main_section{
+  padding-top: 5rem;
+}
+.sidebar-map img{
+  width: 100%;
+}
+.sidebar_main_section h1{
+  font-size: 38px;
+  line-height: 48px;
+  color: #3B3A40;
+  font-weight: 500;
+}
+.sidebar_section_content>ul>li{
+    display: flex;
+    border-bottom: 1px solid #E8E7E8;
+    padding: 8px 0; 
+}
+.sidebar_section_content>ul>li:last-child{
+    border-bottom: none;
+}
+.sidebar_section_content>ul>li span{
+    width: 36px;
+    margin-right: 16px;
+    color: #8DB9C9;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    vertical-align: middle; 
+}
+.sidebar_section_content>ul>li p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #64626A;
+    padding-top: 5px;
+}
+.sidebar_section_content>ul>li div p{
+    margin-bottom: 8px;
+}
+.sidebar_section_content>ul>li div span{
+    color: #B0AFB6;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    padding-bottom: 8px;
+    display: block;
+    width: 100%;
+}
+.sidebar_section_content>ul>li div li{
+    list-style: inside;
+    padding-bottom: 8px;
+}
+.question_buttons{
+  padding-top: 32px;
+}
+.vendor_setup{
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    padding: 13px 32px;
+    margin-right: 16px;
+    background-color: #67893C;
+    border: 1px solid #67893C;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 300ms linear ease-in-out;
+}
+.question_buttons .vendor_setup:hover{
+    background-color: #ffffff;
+    color: #67893C;
+}
+.apply_person{
+    color: #67893C;
+    padding: 13px 32px;
+    border: 1px solid #67893C;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.question_buttons .apply_person:hover{
+    background-color: #67893C;
+    color: white;
+    transition: 300ms linear ease-in-out;
+}
+.page-sidebar{
+    position: relative;
+}
+.page-sidebar-main{
+    margin-bottom: 5rem;
+}
+.page-sidebar-section{
+    max-width: 400px;
+    position: absolute;
+    width: 100%;
+    top: -415px;
+    right: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 18%);
+    border-radius: 5px;
+}
+.ticket{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.ticket:after{
+  content: ' ';
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  border-bottom: 1px dotted #B0AFB6;
+}
+.ticket p{
+  margin-bottom: 0;
+  background-color: #fff;
+  z-index: 1;
+}
+.sidebar-section-block{
+  padding-left: 58px;
+  position: relative;
+  padding-right: 24px;
+  margin-bottom: 16px;
+}
+.sidebar-section-block img{
+  position: absolute;
+  top: 0;
+  left: 24px;
+  width: 18px;
+  top: 5px;
+}
+.sidebar-section-block h3{
+  color: #3B3A40;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: 'sofia-pro';
+  margin-bottom: 8px;
+}
+.sidebar-section-block p{
+  color: #64626A;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 8px;
+}
+.direction-block{
+  display: flex;
+  justify-content: space-between;
+}
+.direction-block a{
+  padding: 9px 16px;
+  cursor: pointer;
+  color: white;
+  background-color: #67893C;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-left: 16px;
+  height: 40px;
+}
+.direction-block a:hover{
+  color: white;
+}
+.ticket_number{
+  padding-right: 8px;
+}
+.ticket_price{
+  padding-left: 8px;
+}
+.hashtag-block a{
+  color: #67893C;
+}
+.social_facebook{
+    background-color: #3B5998;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;  
+    margin-right: 16px;
+}
+.social_facebook i{
+  color: white;
+}
+.social_instagram{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    text-align: center; 
+    border-radius: 50%;
+    background: url('https://cdn.shopify.com/s/files/1/0539/1908/8815/files/Instagram_Banner_0.png?v=1617136573');
+    color: white;
+}
+.social_instagram i{
+    color: white;
+}
+.question_buttons a{
+  display: inline-block;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 1200px){
+  .page-sidebar-main{
+    max-width: 60%;
+  }
+  .page-sidebar-section{
+    max-width: 35%;
+  }
+}
+@media screen and (max-width: 991px){
+  .page-sidebar-main{
+    max-width: 100%;
+  }
+  .page-sidebar-section{
+    max-width: 100%;
+    position: relative;
+    padding-bottom: 48px;
+    top: 0;
+  }
+}
+@media screen and (max-width: 767px){
+  .question_buttons a{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+}

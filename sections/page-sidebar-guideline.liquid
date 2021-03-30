@@ -1,0 +1,39 @@
+{% include 'page-sidebar-number', section: section %}
+
+{% schema %}
+  {
+    "name": "Page Number Guideline",
+    "settings": [
+      {
+         "type": "text",
+         "id": "title",
+         "label": "Title",
+         "default": "Title"
+      }
+   ],
+   "blocks": [
+      {
+        "name": "Content",
+        "type": "Content",
+        "settings": [
+          {
+           "type": "text",
+           "id": "number",
+           "label": "Number"
+          },
+          {
+           "type": "richtext",
+           "id": "text",
+           "label": "Description(Text)"
+          },
+          {
+           "type": "html",
+           "id": "description_html",
+           "label": "Description(HTML)",
+           "default": "<p></p>"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

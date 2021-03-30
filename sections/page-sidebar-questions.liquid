@@ -1,0 +1,39 @@
+{% include 'page-sidebar-number', section: section %}
+
+<div class="question_buttons">
+  <a class="vendor_setup">Vontinue to vendor setup</a>
+  <a class="apply_person">Apply to the in-person fair</a>
+</div>
+
+{% schema %}
+  {
+    "name": "Page Number Questions",
+    "settings": [
+      {
+         "type": "text",
+         "id": "title",
+         "label": "Title",
+         "default": "Title"
+      }
+   ],
+   "blocks": [
+      {
+        "name": "Content",
+        "type": "Content",
+        "settings": [
+          {
+           "type": "text",
+           "id": "number",
+           "label": "Number"
+          },
+          {
+           "type": "richtext",
+           "id": "description_html",
+           "label": "Description(HTML)",
+           "default": "<p></p>"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
