@@ -929,7 +929,7 @@
           "settings": {
             "align_logo": "left",
             "logo": "",
-            "logo_max_width": 135,
+            "logo_max_width": 136,
             "main_linklist": "main-menu",
             "message": true,
             "color_bg": "#162950",
