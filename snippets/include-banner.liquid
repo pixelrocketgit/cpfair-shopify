@@ -1,0 +1,27 @@
+
+{% if type == 'block' %}
+  {% assign banner_image = block.settings.banner_image %}
+  {% assign title = block.settings.title %}
+  {% assign description_html = block.settings.description_html %}
+  {% assign description = block.settings.description %}
+{% else %}
+  {% assign banner_image = section.settings.banner_image %}
+  {% assign title = section.settings.title %}
+  {% assign description_html = section.settings.description_html %}
+  {% assign description = section.settings.description %}
+{% endif %}
+
+<div class="banner-container" style="background-image: url('{{ banner_image | img_url:'master' }}')">
+  <div class="banner-content-wrapper">
+    <div class="container page-width">
+      <div class="banner-content">
+        <h1>{{ title }}</h1>
+        {% if description_html != blank %}
+        	{{ description_html}}
+        {% else %}
+        	<p>{{ description }}</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
