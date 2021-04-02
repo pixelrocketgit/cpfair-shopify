@@ -4,3 +4,16 @@
 <div class="page-reviews">
   {% section 'page-reviews' %}
 </div>
+
+<script>
+  $(window).load(function(){
+    var viewport_width = $(window).width();
+    if (viewport_width > 767){
+      $('.reviews-container').masonry({
+        itemSelector: '.review',
+        percentPosition: true,
+        horizontalOrder: false
+      });
+    }
+  });
+</script>

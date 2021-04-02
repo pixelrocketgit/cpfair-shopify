@@ -10,6 +10,7 @@
   8. How It Works Page
   9. Online Store Page
   10. Program Page
+  11. Customer Reviews Page
 */
 
 /* Global Setting */
@@ -1580,5 +1581,74 @@ a{
   .program-guide-image{
     text-align: center;
     margin: 0 0 24px 0;
+  }
+}
+
+/* 11. Customer Reviews Page */
+.reviews-container{
+  padding-top: 100px;
+}
+.review{
+  padding: 20px;
+}
+.review-wrapper{
+  padding: 2rem;
+  box-shadow: 0px 5px 60px rgba(0, 0, 0, 0.08);
+}
+.review-header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.review-header img{
+  width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.customer_info h3{
+    font-family: 'sofia-pro';
+    font-size: 18px;
+    line-height: 24px;
+    color: #3B3A40;
+    font-weight: 400;
+    margin-bottom: 0;  
+}
+.customer_info i{
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFB353;
+    margin-right: 6px; 
+}
+.customer_info span{
+    font-size: 14px;
+    line-height: 16px;
+    color: #64626A;
+}
+.review-content{
+    font-size: 16px;
+    line-height: 24px;
+    color: #64626A;
+    margin-bottom: 16px;
+}
+.review-footer img{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 8px;
+}
+@media screen and (max-width: 767px){
+  .review{
+    padding: 20px 10px;
+  }
+  .reviews-container{
+    padding-top: 60px;
+  }
+  .review-footer img{
+    margin-right: 5px;
+  }
+  .review-footer img:last-child{
+    margin-right: 0;
   }
 }

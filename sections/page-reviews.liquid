@@ -11,11 +11,33 @@
 </div>
 
 <div class="page-width">
-  <div class="reviews-container">
-    {% for block in section.blocks %}
-
-    {% endfor %}
-  </div>
+    <div class="reviews-container grid">
+      {% for block in section.blocks %}
+        <div class="review grid__item medium-up--one-third">
+          <div class="review-wrapper">
+            <div class="review-header">
+              <img src="{{ block.settings.customer_image | img_url:'master' }}">
+              <div class="customer_info">
+                <h3>{{ block.settings.customer }}</h3>
+                <p><i class="fa fa-star" aria-hidden="true"></i><span>{{ block.settings.rating }}</span></p>
+              </div>
+            </div>
+            <p class="review-content">{{ section.settings.description }}</p>
+            <div class="review-footer">
+              {% if block.settings.additional_image_1 != blank %}
+                <img src="{{ block.settings.additional_image_1 | img_url:'master' }}">
+              {% endif %}
+              {% if block.settings.additional_image_2 != blank %}
+                <img src="{{ block.settings.additional_image_2 | img_url:'master' }}">
+              {% endif %}   
+              {% if block.settings.additional_image_3 != blank %}
+                <img src="{{ block.settings.additional_image_3 | img_url:'master' }}">
+              {% endif %}        
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
 </div>
 
 {% schema %}
@@ -42,13 +64,43 @@
     "blocks": [
       {
         "type": "Feedback",
-        "name": "Feedback",
+        "name": "Customer",
         "settings": [
           {
             "type": "image_picker",
             "id": "customer_image",
             "label": "Image"
-          }
+          },
+          {
+            "type": "text",
+            "id": "customer",
+            "label": "Name"
+          },
+          {
+            "type": "text",
+            "id": "rating",
+            "label": "Rating"
+          },
+          {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description"
+          },
+          {
+            "type": "image_picker",
+            "id": "additional_image_1",
+            "label": "Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "additional_image_2",
+            "label": "Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "additional_image_3",
+            "label": "Image"
+          }    
         ]
       }
     ]
