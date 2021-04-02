@@ -273,6 +273,7 @@
       "title": "Login",
       "email": "Email",
       "password": "Password",
+      "stay_signed_in": "Stay signed in",
       "forgot_password": "Forgot your password?",
       "sign_in": "Sign In",
       "guest_title": "Continue as a guest",
@@ -365,7 +366,9 @@
       "account": "Account",
       "log_out": "Log out",
       "log_in": "Log in",
-      "create_account": "Create account"
+      "create_account": "Create account",
+      "dont_have_account": "Don't have an account?",
+      "already_have_account": "Already have an account?"
     },
     "footer": {
       "social_platform": "{{ name }} on {{ platform }}"

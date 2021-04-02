@@ -1,7 +1,12 @@
 /*
 	1. Policy Pages (Template with banner and left menu) 
-	2. 
+	2. Sign Up / Sign In
+    00. Responsive query
 */
+
+.main-content {
+    min-height: 60vh;
+}
 
 /* 1. Policy Pages*/
 .page-policy-content {
@@ -61,6 +66,85 @@
     display: block;
 }
 
+/* 2. Sign Up / Sign In */
+#CustomerLoginForm,
+#RecoverPasswordForm,
+#CustomerSignupForm {
+    width: 100%;
+    max-width: 356px;
+    margin: 0 auto;
+}
+.template-customers-login .form-vertical [type="submit"],
+.template-customers-login .form-vertical .btn,
+.template-customers-register .form-vertical [type="submit"],
+.template-customers-register .form-vertical .btn,
+.popupMainCont-login .form-vertical [type="submit"],
+.popupMainCont-login .form-vertical .btn {
+    padding: 14px 16px 16px;
+    margin-bottom: 32px;
+}
+.template-customers-login .form-vertical [type="submit"],
+.template-customers-login .form-vertical .btn,
+.template-customers-register .form-vertical [type="submit"],
+.template-customers-register .form-vertical .btn,
+.popupMainCont-login .form-vertical [type="submit"],
+.popupMainCont-login .form-vertical .btn,
+.btn-fullwidth {
+    width: 100%;
+}
+.template-customers-login h1,
+.template-customers-register h1,
+.popupMainCont-login h1 {
+    margin-bottom: 30px;
+}
+.template-customers-login label,
+.template-customers-register label,
+.popupMainCont-login label {
+    font-size: 12px;
+    line-height: 1.333;
+    margin-bottom: 8px;
+    color: var(--color-text-field-text);
+    text-align: left;
+}
+.template-customers-login .form-vertical input,
+.template-customers-register .form-vertical input,
+.popupMainCont-login .form-vertical input {
+    margin-bottom: 16px;
+    border-radius: 5px;
+}
+.login-bottom {
+    display: flex;
+    width: 100%;
+    margin-top: 32px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#CustomerSignupForm  .login-bottom {
+    margin-bottom: 16px;
+}
+.login-bottom label {
+    font-size: 14px;
+    color: var(--color-body-text);
+}
+#RecoverPassword {
+    font-size: 14px;
+    color: #B0AFB6;
+}
+#RecoverPassword:hover {
+    color: var(--color-btn-primary);
+}
+#customer_register_link {
+    color: var(--color-btn-primary);
+}
+#customer_register_link:hover {
+    color: var(--color-btn-primary-focus);
+}
+p.text-recover {
+    margin-bottom: 32px;
+}
+
+/* 00. Responsive query */
 @media only screen and (min-width: 1024px) and (max-width: 1280px){
     .page-content--tabs .nav-tabs li {
         padding: 8px 16px;

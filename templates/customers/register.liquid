@@ -2,7 +2,7 @@
   <div class="grid">
     <div class="grid__item medium-up--one-half medium-up--push-one-quarter">
 
-      <div class="form-vertical">
+      <div id="CustomerSignupForm" class="form-vertical">
 
         <h1 class="text-center">{{ 'customer.register.title' | t }}</h1>
 
@@ -13,8 +13,10 @@
           <label for="{{ formId }}-FirstName">{{ 'customer.register.first_name' | t }}</label>
           <input type="text" name="customer[first_name]" id="{{ formId }}-FirstName" {% if form.first_name %}value="{{ form.first_name }}"{% endif %} autocomplete="given-name">
 
-          <label for="{{ formId }}-LastName">{{ 'customer.register.last_name' | t }}</label>
-          <input type="text" name="customer[last_name]" id="{{ formId }}-LastName" {% if form.last_name %}value="{{ form.last_name }}"{% endif %} autocomplete="family-name">
+          {%- comment -%}
+            <label for="{{ formId }}-LastName">{{ 'customer.register.last_name' | t }}</label>
+            <input type="text" name="customer[last_name]" id="{{ formId }}-LastName" {% if form.last_name %}value="{{ form.last_name }}"{% endif %} autocomplete="family-name">
+          {%- endcomment -%}
 
           <label for="{{ formId }}-email">{{ 'customer.register.email' | t }}</label>
           <input
@@ -60,10 +62,21 @@
               <span>{{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.</span>
             </span>
           {%- endif -%}
+          
+          <div class="text-left">
+            <div class="login-bottom">
+              <p class="login-stay text-left">
+                <input type="checkbox" id="stay_signed_reg" name="Stay signed in" value="Stay signed in">
+                <label for="stay_signed_reg">{{ 'customer.login.stay_signed_in' | t }}</label>
+              </p>              
+            </div>            
 
-          <p class="text-center">
-            <input type="submit" value="{{ 'customer.register.submit' | t }}" class="btn">
-          </p>
+            <input type="submit" class="btn btn-fullwidth" value="{{ 'customer.register.submit' | t }}">
+
+            <p class="text-left">
+              {{ 'layout.customer.already_have_account' | t }}  {{ 'layout.customer.create_account' | t | customer_register_link }}
+            </p>
+          </div>
 
         {% endform %}
       </div>

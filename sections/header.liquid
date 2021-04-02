@@ -275,6 +275,21 @@
             {% endif %}
           </li>
         {% endfor %}
+        {% if shop.customer_accounts_enabled %}
+          {% if customer %}
+          <li class="site-nav--active mobile-nav__item border-top">
+            <a href="{{ routes.account_url }}" class="mobile-nav__link">
+              <span class="site-nav__label">{{ 'layout.customer.account' | t }}</span>
+            </a>
+          </li>
+          {% else %}
+          <li class="site-nav--active mobile-nav__item border-top">
+            <a href="{{ routes.account_login_url }}" class="{% unless template.name == 'customer' %}trigger_popup_fricc{% endunless %} mobile-nav__link">
+              <span class="site-nav__label">{{ 'layout.customer.log_in' | t }}</span>
+            </a>
+          </li>
+          {% endif %}
+        {% endif %}
       </ul>
     </nav>
 

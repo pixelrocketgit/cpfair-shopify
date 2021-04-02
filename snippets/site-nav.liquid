@@ -98,7 +98,7 @@
     </li>
     {% else %}
     <li {% if link.active %} class="site-nav--active"{% endif %}>
-      <a href="{{ routes.account_login_url }}" class="site-nav__link site-nav__link--main{% if link.active %} site-nav__link--active{% endif %} site-header__account">
+      <a href="{{ routes.account_login_url }}" class="{% unless template.name == 'customer' %}trigger_popup_fricc{% endunless %} site-nav__link site-nav__link--main{% if link.active %} site-nav__link--active{% endif %} site-header__account">
         <span class="site-nav__label">{{ 'layout.customer.log_in' | t }}</span>
       </a>
     </li>
