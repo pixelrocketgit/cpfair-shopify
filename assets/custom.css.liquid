@@ -7,6 +7,9 @@
 	0.1 Banner Section
 	6. Application Page
   7. About US Page
+  8. How It Works Page
+  9. Online Store Page
+  10. Program Page
 */
 
 /* Global Setting */
@@ -927,6 +930,7 @@ a{
     line-height: 64px;
     margin-bottom: 16px;
   	color: white;
+    font-weight: 400;
 }
 .banner-content p{
 	font-size: 18px;
@@ -952,6 +956,30 @@ a{
   .banner-content p{
   	font-size: 18px;
 	line-height: 24px;
+  }
+}
+/* Banner Button Section */
+.banner-container-button .banner-content-wrapper{
+  bottom: 40px;
+}
+.banner-content a{
+    display: inline-block;
+    background: #67893C;
+    border-radius: 5px;
+    padding: 13px 22px;
+    color: white;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 16px; 
+}
+.banner-content a:hover{
+    color: white;
+}
+@media screen and (max-width: 767px){
+  .banner-content a{
+    padding: 13px 0;
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -1219,5 +1247,338 @@ a{
   .about_image_two{
     height: 340px;
     object-fit: cover;
+  }
+}
+/* 8. How It Works Page */
+.page-how-content{
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  text-align: center;
+}
+.page-how-content h3{
+    font-size: 38px;
+    line-height: 48px;
+    color: #3B3A40;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.page-how-content>p{
+    max-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #64626A;  
+}
+.how-contents-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.extra_image img{
+    padding-top: 60px;
+}
+.how-content h4{
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: 'sofia-pro';
+}
+.how-content p{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #64626A;
+}
+.how-content{
+    width: 250px;
+}
+.page-how-questions{
+    padding: 120px;
+    box-shadow: 0px 50px 60px rgb(0 0 0 / 4%);
+    border-radius: 5px;  
+}
+.page-how-questions h3{
+    font-weight: 400;
+    color: #3B3A40;
+    font-size: 38px;
+    line-height: 48px;
+    margin-bottom: 48px;
+}
+.question_title p{
+    color: #3B3A40;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+.question_content p{
+    color: #B0AFB6;
+    font-size: 16px;
+    line-height: 24px;
+}
+.how-question{
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 991px){
+  .page-how-content{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .page-how-content>p{
+    padding-bottom: 0;
+  }
+  .how-contents-wrapper{
+    flex-wrap: wrap;
+  }
+  .how-content{
+    width: 50%;
+    padding-top: 40px;
+  }
+  .extra_image{
+    width: 100%;
+  }
+  .how-content img{
+    width: 143px;
+  }
+  .page-how-questions{
+    padding: 32px;
+  }
+}
+
+/* 9. Online Store Page */
+.page-store .shopify-section{
+  padding-top: 120px;
+  padding-bottom: 0;
+}
+.feature-row-page-store{
+  
+}
+.page-store h2{
+  font-size: 38px;
+    line-height: 48px;
+    color: #3B3A40;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+.feature-row-page-store .feature-row{
+  align-items: flex-start;
+}
+.feature-row-page-store .feature-row__item{
+  padding: 0;
+}
+.feature-row-page-store .feature-row__item h3{
+  margin-bottom: 8px;
+}
+.feature-row-page-store .feature-row__item h3 p{
+  font-size: 24px;
+  line-height: 32px;
+  font-family: 'sofia-pro';
+  font-weight: 400;
+  color: #3B3A40;
+}
+.feature-row__text.feature-row__text--right{
+  padding-right: 40px;
+}
+.feature-row-page-store .feature-row__item div p{
+  color: #B0AFB6;
+  font-size: 16px;
+  line-height: 24px;
+}
+.page-store .featured-blog-store h2{
+  margin-bottom: 16px;
+}
+.featured-blog-store .featured-blog_cont{
+  padding: 0;
+  overflow: visible;
+}
+.featured-blog-store>header{
+  max-width: 400px;
+  margin-bottom: 56px;
+}
+.featured-blog-store>header p{
+  font-size: 16px;
+  line-height: 24px;
+  color: #64626A;
+}
+.featured-blog-store .featured-blog_article{
+  padding: 0;
+  box-shadow: none;
+  border: none;
+}
+.featured-blog-store .article__title{
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-family: 'Ivy Mode';
+    color: #3B3A40;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px; 
+}
+.featured-blog-store .article__grid-excerpt{
+    font-size: 16px;
+    line-height: 24px;
+    color: #B0AFB6;
+    margin-bottom: 24px;  
+}
+.featured-blog-store .featured-blog_article .article__meta-buttons li{
+    display: inline-block;
+}
+.featured-blog-store .btn--link{
+    color: #67893C;
+    padding: 0;
+    font-size: 14px;
+    line-height: 16px;  
+}
+.page-store .index-section--ourslideshow h2{
+  margin-bottom: 56px;
+}
+.page-store .index-section--ourslideshow .slideshow__subtitle{
+  margin-bottom: 32px;
+}
+.page-store .index-section--ourslideshow .slideshow__title{
+  font-size: 16px;
+  line-height: 24px;
+  color: #B0AFB6;
+}
+.page-store .index-section--ourslideshow .bloquote-icon-left{
+  display: none;
+}
+.page-store .index-section--ourslideshow .slideshow__text-content{
+  padding: 56px;
+}
+.page-store .index-section--ourslideshow header{
+  text-align: left !important;
+}
+.page-store #recently-viewed-products h2{
+  margin-bottom: 56px;
+}
+.page-store #shopify-section-recently-viewed .grid{
+  margin: 0;
+}
+@media screen and (max-width: 767px){
+  .page-store .shopify-section{
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+  .feature-row__text.feature-row__text--right{
+    padding-right: 0;
+  }
+  .page-store .featured-blog_article{
+    width: 100%;
+  }
+  .page-store .featured-blog_article:nth-child(2n+1){
+    padding-right: 8px;
+  }
+  .page-store .featured-blog_article:nth-child(2n){
+    padding-left: 8px;
+  }
+  .page-store .article__grid-image-container{
+    padding: 0 !important;
+    margin: 0;
+  }
+  .page-store .article__grid-image{
+    position: relative;
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .featured-blog-store .article__title{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .page-store .index-section--ourslideshow{
+    display: none;
+  }
+  .page-store #shopify-section-recently-viewed{
+    display: none;
+  }
+}
+
+/* 10. Program Page */
+.program-wrapper{
+    display: flex;
+    padding: 40px 24px;
+    box-shadow: 0px 5px 60px rgb(0 0 0 / 8%);
+    border-radius: 5px;  
+    margin-bottom: 3rem;
+}
+.program-date{
+    width: 100px;
+    margin-right: 24px; 
+}
+.page-program .program-wrapper .program-date p{
+    font-size: 14px;
+    line-height: 16px;
+    color: #3B3A40;
+    margin-bottom: 4px;
+}
+.page-program .program-date h4{
+    margin: 0;
+    font-size: 24px;
+    line-height: 30px;
+    color: #3B3A40;
+    font-weight: 400;  
+}
+.page-program .program-date span{
+    font-size: 14px;
+    line-height: 16px;
+    color: #B0AFB6;
+    margin-top: 4px;
+}
+.program-content{
+    padding-left: 24px;
+    border-left: 1px solid #E8E7E8; 
+}
+.page-program .page_content p.program-heading{
+     font-size: 24px;
+    line-height: 32px;
+    color: #3B3A40;
+    margin-bottom: 16px; 
+}
+.page-program span{
+    font-size: 16px;
+    line-height: 24px;
+    color: #B0AFB6;
+}
+.page-program .extra_content span{
+    color: #64626A;
+}
+.page-program .program-wrapper p{
+    font-size: 16px;
+    line-height: 22px;
+    color: #3B3A40; 
+}
+.program-guide-content span{
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.program-guide-content .program-guide-link a{
+      border: none;
+    color: #67893C;
+}
+.program-guide{
+  display: flex;
+}
+.program-guide-image{
+  margin-right: 24px;
+}
+.program-guide-image img{
+  min-width: 242px;
+}
+@media screen and (max-width: 767px){
+  .program-date{
+    max-width: 76px;
+    min-width: 76px;
+    margin-right: 0;
+  }
+  .program-guide{
+    display: none;
+  }
+  .program-guide-image{
+    text-align: center;
+    margin: 0 0 24px 0;
   }
 }
