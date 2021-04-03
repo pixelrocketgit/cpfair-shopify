@@ -11,6 +11,7 @@
   9. Online Store Page
   10. Program Page
   11. Customer Reviews Page
+  12. Support Page
 */
 
 /* Global Setting */
@@ -1733,35 +1734,40 @@ a{
     margin-bottom: 8px;
 }
 .contact-form input::placeholder,
-.contact-form textarea::placeholder{
+.contact-form textarea::placeholder,
+.banner-support-container .search-form__input::placeholder{
     font-size: 16px;
     line-height: 24px;
     color: #B0AFB6;
     font-family: 'sofia-pro';
 }
 .contact-form input::-webkit-input-placeholder,
-.contact-form textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.contact-form textarea::-webkit-input-placeholder,
+.banner-support-container .search-form__input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     font-size: 16px;
     line-height: 24px;
     color: #B0AFB6;
     font-family: 'sofia-pro';
 }
 .contact-form input::-moz-placeholder,
-.contact-form textarea::-moz-placeholder { /* Firefox 19+ */
+.contact-form textarea::-moz-placeholder,
+.banner-support-container .search-form__input::-moz-placeholder { /* Firefox 19+ */
     font-size: 16px;
     line-height: 24px;
     color: #B0AFB6;
     font-family: 'sofia-pro';
 }
 .contact-form input:-ms-input-placeholder,
-.contact-form textarea:-ms-input-placeholder { /* IE 10+ */
+.contact-form textarea:-ms-input-placeholder,
+.banner-support-container .search-form__input:-ms-input-placeholder { /* IE 10+ */
     font-size: 16px;
     line-height: 24px;
     color: #B0AFB6;
     font-family: 'sofia-pro';
 }
 .contact-form input:-moz-placeholder,
-.contact-form textarea:-moz-placeholder { /* Firefox 18- */
+.contact-form textarea:-moz-placeholder,
+.banner-support-container .search-form__input:-moz-placeholder { /* Firefox 18- */
     font-size: 16px;
     line-height: 24px;
     color: #B0AFB6;
@@ -1780,5 +1786,86 @@ a{
   }
   .contact-form [type="submit"]{
     width: 100%;
+  }
+}
+
+/* 12. Support Page */
+.page-support-wrapper{
+  padding-top: 70px;
+}
+.contact-support h2{
+    font-size: 38px;
+    line-height: 48px;
+    color: #3B3A40;
+    padding-bottom: 56px;
+    border-bottom: 1px solid #E8E7E8;  
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.support-faq{
+    border-bottom: 1px solid #E8E7E8;  
+    padding: 24px 0;
+    overflow: hidden;
+}
+.support-faq p{
+    padding-right: 30px;
+    position: relative;
+    font-size: 24px;
+    line-height: 32px;
+    color: #3B3A40;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+.support-faq-wrapper.expanded p{
+    margin-bottom: 24px;
+}
+.support-faq p:before{
+    position: absolute;
+    content: ' ';
+    right: 0;
+    top: 50%;
+    width: 14px;
+    height: 1px;
+    box-sizing: border-box;
+    border-top: 2px solid #3B3A40;
+}
+.support-faq p:after{
+    position: absolute;
+    content: ' ';
+    right: 6px;
+    top: calc(50% - 6px);
+    width: 1px;
+    height: 14px;
+    box-sizing: border-box;
+    border-left: 2px solid #3B3A40;  
+}
+.support-faq span{
+  display: none;
+}
+.banner-support-container .search-bar__submit{
+  display: none;
+}
+.banner-support-container .search-form__container{
+    padding: 0;
+    max-width: 400px;  
+    border-radius: 5px;
+    margin-top: 16px;
+}
+.banner-support-container .search-bar__form{
+  border: none;
+}
+.banner-support-container .search-bar__input{
+  border: none;
+}
+.support-faq-wrapper.expanded p:after{
+  display: none;
+}
+@media screen and (max-width: 767px){
+  .page-support-wrapper{
+    display: flex;
+    flex-direction: column-reverse;    
+  }
+  .contact-support{
+    padding-top: 56px;
   }
 }
