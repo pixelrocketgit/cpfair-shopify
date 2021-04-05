@@ -207,7 +207,7 @@
     <li id="a11y-selection-message">{{ 'general.accessibility.selection_help' | t }}</li>
   </ul>
 
-  {% unless template.name == 'customer' %}
+  {% unless template contains 'customers/' %}
     <!--begin-sign in/up popup-->
     {% include 'sign-in-popup' %}
     <!--end-sign in/up popup-->

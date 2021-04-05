@@ -74,7 +74,7 @@
             <input type="submit" class="btn btn-fullwidth" value="{{ 'customer.register.submit' | t }}">
 
             <p class="text-left">
-              {{ 'layout.customer.already_have_account' | t }}  {{ 'layout.customer.create_account' | t | customer_register_link }}
+              {{ 'layout.customer.already_have_account' | t }}  <a href="{{ routes.account_login_url }}" id="customer_register_link" class="">{{ 'customer.login.title' | t  }}</a>
             </p>
           </div>
 
