@@ -1,0 +1,35 @@
+
+{% if type == 'block' %}
+  {% assign banner_image = block.settings.banner_image %}
+  {% assign title = block.settings.title %}
+  {% assign subtitle = block.settings.subtitle %}
+  {% assign description_html = block.settings.description_html %}
+{% else %}
+  {% assign banner_image = section.settings.banner_image %}
+  {% assign title = section.settings.title %}
+  {% assign subtitle = section.settings.subtitle %}
+  {% assign description_html = section.settings.description_html %}
+{% endif %}
+
+<div class="banner-container" style="background-image: url('{{ banner_image | img_url:'master' }}')">
+  <div class="banner-content-wrapper">
+    <div class="container page-width">
+      <div class="banner-content">
+        {% if title != blank %}
+          <h1>{{ title }}</h1>
+        {% endif %}
+        {% if subtitle != blank %}
+        	{{ subtitle}}        
+        {% endif %}
+        {% if description_html != blank %}
+          <div class="banner-greentext">
+            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 1L7 4M7 17L1.55279 14.2764C1.214 14.107 1 13.7607 1 13.382V2.61803C1 1.87465 1.78231 1.39116 2.44721 1.72361L7 4V17ZM7 17L13 14L7 17ZM7 17V4V17ZM13 14L17.5528 16.2764C18.2177 16.6088 19 16.1253 19 15.382V4.61803C19 4.23926 18.786 3.893 18.4472 3.72361L13 1V14ZM13 14V1V14Z" stroke="#67893C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            {{ description_html}}  
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

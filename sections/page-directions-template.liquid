@@ -1,0 +1,86 @@
+{% comment %}
+** Directions (Location) page - custom view **
+- Page template
+- Uses blocks
+{% endcomment %}
+
+{% if section.blocks.size > 0 %}
+    {% for block in section.blocks %}
+        <div {{ block.shopify_attributes }} class="block__{{ block.type }} block__{{ block.id }}">
+            {% if block.type == "banner" %}
+                <!-- Banner with text -->  
+                {% include 'include-banner-directions', type: 'block' %}             
+            {% endif %}
+        </div>
+    {% endfor %}
+    {% for block in section.blocks %}
+        <div {{ block.shopify_attributes }} class="page-directions__content block__{{ block.type }} block__{{ block.id }}">
+            <div class="page-width">
+                {% if block.type == "page" %}
+                    <!-- Page -->  
+                    {% assign content_page = block.settings.content_page %}
+
+                    <div class="page-directions-content">
+                        <div class="rte">
+                            {{ pages[content_page].content }}
+                        </div>
+                    </div>                   
+
+                {% elsif block.type == "sidebar-cart" %}
+                    <!-- sidebar cart -->
+                    
+                {% endif %}
+            </div>            
+        </div>
+    {% endfor %}
+{% endif %}
+
+
+{% schema %}
+
+{
+    "name": "Page | Directions",
+    "class": "page-directions-section",
+    "blocks": [      
+    {
+    "type": "banner",
+    "name": "Banner with text",
+    "settings": [
+        {
+        "type": "image_picker",
+        "id": "banner_image",
+        "label": "Banner Image"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Title"
+        },
+        {
+            "type": "richtext",
+            "id": "subtitle",
+            "label": "Subtitle"
+        },
+        {
+            "type": "richtext",
+            "id": "description_html",
+            "label": "Description(HTML)"
+        }
+    ]
+    },
+    {
+        "type": "page",
+        "name": "Page",
+        "settings": [
+        {
+            "type": "page",
+            "id": "content_page",
+            "label": "Content page"
+        }
+        ]
+    }
+    ]
+}
+    
+{% endschema %}
