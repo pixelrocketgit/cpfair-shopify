@@ -1,6 +1,7 @@
 /*
 	1. Policy Pages (Template with banner and left menu) 
 	2. Sign Up / Sign In
+    3. Directions page (custom page template)
     00. Responsive query
 */
 
@@ -61,6 +62,15 @@
 }
 .page-content--tabs .tab-pane {
     display: none;
+    color: var(--color-body-text);
+}
+.page-content--tabs .tab-pane ul,
+.page-content--tabs .tab-pane ol {
+    color: var(--color-body-text);
+}
+.page-content--tabs .tab-pane li {
+    list-style: inside;
+    margin-bottom: 6px;
 }
 .page-content--tabs .tab-pane.active {
     display: block;
@@ -144,6 +154,73 @@ p.text-recover {
     margin-bottom: 32px;
 }
 
+/* 3. Directions page (custom page template) */
+.page-directions-section .banner-container .page-width {
+    max-width: 1390px;
+}
+.page-directions-section .banner-content {
+    max-width: 528px;
+}
+.page-directions-section .banner-content h1,
+.page-directions-section .banner-content p {
+    color: var(--color-body-text);
+}
+.page-directions-section .banner-greentext p {
+    color: var(--color-sale-text);
+    font-size: var(--font-size-base);
+    margin-left: 16px;
+}
+.page-directions-section .banner-greentext svg {
+    min-width: 18px;
+    margin-top: 6px;
+}
+.banner-greentext {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 8px;
+}
+.page-directions-content {
+    background: #FFFFFF;
+    box-shadow: 0px 5px 60px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    width: 60%;
+    max-width: 730px;
+    padding: 56px;
+    margin-bottom: 50px;
+}
+.page-directions__content {
+    margin-top: 70px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.page-directions-content h3 {
+    font-size: calc(((var(--font-size-header) - 4 ) / (var(--font-size-base))) * 1em);
+    font-family: var(--font-stack-body);
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+.page-directions-content h3:first-child {
+    margin-top: 40px;
+}
+.page-directions__content .page-sidebar-section {
+    position: relative;
+    width: 100%;
+    top: unset;
+    right: unset;
+    display: block;
+}
+.social_instagram:hover,
+.social_facebook:hover {
+    opacity: .85;
+}
+
+
 /* 00. Responsive query */
 @media only screen and (min-width: 1024px) and (max-width: 1280px){
     .page-content--tabs .nav-tabs li {
@@ -156,6 +233,10 @@ p.text-recover {
     }
     .page-content--tabs .nav-tabs li a {
         font-size: 16px;
+    }
+    .page-directions-content {
+        width: 100%;
+        max-width: 575px;
     }
 }
 @media screen and (max-width: 1023px){
@@ -175,6 +256,13 @@ p.text-recover {
     }
     .page-content--tabs .tab-content {
         width: 100%;
+    }
+    .page-directions-content {
+        width: 100%;
+        max-width: 100%;
+    }
+    .page-directions__content .page-sidebar-section {
+        max-width: 575px;
     }
 }
 @media screen and (max-width: 768px){
