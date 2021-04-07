@@ -1,0 +1,64 @@
+<div class="page-how-content">
+  <h3>{{ section.settings.title }}</h3>
+  {{ section.settings.subtitle }}
+  <div class="how-contents-wrapper">
+    <div class="extra_image">
+      <img src="{{ section.settings.extra_image | img_url: 'master' }}">
+    </div>
+    {% for block in section.blocks %}
+      <div class="how-content">
+        <img src="{{ block.settings.image | img_url: 'master' }}">
+        <h4>{{ block.settings.title }}</h4>
+        {{ block.settings.subtitle }}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Page Content",
+    "settings": [
+      {
+         "type": "text",
+         "id": "title",
+         "label": "Title",
+         "default": "Title"
+      },
+      {
+       "type": "richtext",
+       "id": "subtitle",
+       "label": "Subtitle"
+      },
+      {
+        "type": "image_picker",
+        "id": "extra_image",
+        "label": "Extra Image"
+      }
+   ],
+   "blocks": [
+      {
+        "name": "Content",
+        "type": "Content",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+           "type": "text",
+           "id": "title",
+           "label": "Title"
+          },
+          {
+           "type": "richtext",
+           "id": "subtitle",
+           "label": "Subtitle"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

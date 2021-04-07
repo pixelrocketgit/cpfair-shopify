@@ -1,5 +1,5 @@
 /*
-	1. Policy Pages (Template with banner and left menu) 
+	1. Policy, Refund, FAQ, Help Pages (Template with banner and left menu) 
 	2. Sign Up / Sign In
     3. Directions page (custom page template)
     00. Responsive query
@@ -9,7 +9,7 @@
     min-height: 60vh;
 }
 
-/* 1. Policy Pages*/
+/* 1. Policy, Refund, FAQ, Help Pages */
 .page-policy-content {
     margin-top: 70px;
     margin-bottom: 60px;
@@ -27,6 +27,8 @@
 .page-content--tabs .nav-tabs {
     width: 30%;
     max-width: 400px;
+    padding-bottom: 150px;
+    position: relative;
 }
 .page-content--tabs .nav-tabs li {
     align-items: center;
@@ -39,6 +41,21 @@
 .page-content--tabs .nav-tabs li:hover {
     background-color: #E8F7FB;
     
+}
+.page-content--tabs .nav-tabs li.nav-tabs--cta {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+}
+.page-content--tabs .nav-tabs li.nav-tabs--cta .btn {
+    color: var(--color-text-field);
+}
+.page-content--tabs .nav-tabs li.nav-tabs--cta .btn:hover {
+    color: var(--color-text-field);
+    background-color: var(--color-btn-primary-darker);
 }
 .page-content--tabs .nav-tabs li span {
     color: #8DB9C9;
@@ -74,6 +91,9 @@
 }
 .page-content--tabs .tab-pane.active {
     display: block;
+}
+.page-content--tabs .support-faq span {
+    color: #64626A;
 }
 
 /* 2. Sign Up / Sign In */
@@ -189,9 +209,15 @@ p.text-recover {
     width: 60%;
     max-width: 730px;
     padding: 56px;
+    margin-bottom: 50px;
 }
 .page-directions__content {
     margin-top: 70px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 .page-directions-content h3 {
     font-size: calc(((var(--font-size-header) - 4 ) / (var(--font-size-base))) * 1em);
@@ -201,6 +227,17 @@ p.text-recover {
 }
 .page-directions-content h3:first-child {
     margin-top: 40px;
+}
+.page-directions__content .page-sidebar-section {
+    position: relative;
+    width: 100%;
+    top: unset;
+    right: unset;
+    display: block;
+}
+.social_instagram:hover,
+.social_facebook:hover {
+    opacity: .85;
 }
 
 
@@ -216,6 +253,10 @@ p.text-recover {
     }
     .page-content--tabs .nav-tabs li a {
         font-size: 16px;
+    }
+    .page-directions-content {
+        width: 100%;
+        max-width: 575px;
     }
 }
 @media screen and (max-width: 1023px){
@@ -235,6 +276,13 @@ p.text-recover {
     }
     .page-content--tabs .tab-content {
         width: 100%;
+    }
+    .page-directions-content {
+        width: 100%;
+        max-width: 100%;
+    }
+    .page-directions__content .page-sidebar-section {
+        max-width: 575px;
     }
 }
 @media screen and (max-width: 768px){

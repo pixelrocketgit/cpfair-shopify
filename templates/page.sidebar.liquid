@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 {% section 'default-banner' %}
 
 <div class="page-width page-sidebar">
@@ -7,74 +8,12 @@
       {{ page.content }}  
     </div>
 
-    <div class="guidelines_section sidebar_main_section">
-      <h1>Guidelines</h1>
-      <div class="guidelines_content sidebar_section_content">
-        <ul>
-          <li><span>01.</span><p>Commercial retail (buy/sell) business are not allowed.</p></li>
-          <li><span>02.</span><p>Food Vendors: Twenty-five (25) Food vendors  provide regional southern foods at The Cotton Pickin’ Fair.  First priority is given to our local nonprofit organizations (many of these organizations have been with us for over forty years).  If a nonprofit organization cannot meet our needs, we consider a professional food vendor; fees begin at $750.</p></li>
-          <li><span>03.</span><p>Applications for the May edition should be received by March 1 and August 1 for the October edition.</p></li>
-          <li><span>04.</span><p>Applications may be submitted electronically or the form may be mailed via the USPS.</p></li>
-          <li><span>05.</span><p>Jury review is continuous, and applications submitted after the deadline will be considered to fill cancellations and specific merchandising requirements for the upcoming event.</p></li>
-          <li><span>06.</span><p>There are no application fees. Do not send money with the application.</p></li>
-          <li><span>07.</span><p>An email notification of application status is normally sent within 30 days of receipt. Applicants selected to participate in the Cotton Pickin’ Fair will receive an email Invitation/Contract.</p></li>
-          <li><span>08.</span><p>The person named in the application must be present for both full days of the Fair.</p></li>
-          <li><span>09.</span><p>Arts or Craft items offered for sale must be made by the applicant.</p></li>
-          <li><span>10.</span><p>Original art must meet or exceed 50% of offerings. Prints are permitted, but may not exceed 50% of offering.</p></li>
-          <li><span>11.</span><p>Antique specialists are not allowed to sell crafts or reproductions in their booths.</p></li>
-          <li><span>12.</span><p>Gourmet Food applicants must have a current Cottage Food or Department of Agriculture License and if accepted to the Cotton Pickin’ Fair must post a copy of their license in their booth.</p></li>
-          <li><span>13.</span><p>Children’s activity applicants must have general liability insurance. If accepted Cotton Pickin’ Fairs, Inc. must be named as an Additional Insured, and a copy must be sent to our office.</p></li>
-          <li>
-            <span>14.</span>
-            <div>
-              <p>Arts or Craft items offered for sale must be made by the applicant.</p>
-              <p>(*If you experience difficulty downsizing your photographs, you may send them in an email. Please include your name and contact information in the email.)</p>
-              <ul>
-                <li>One (1) photograph of the applicant at work on art or craft. Photograph must include the applicant, and show work-in- progress.</li>
-                <li>Three (3) close-up photographs of products to be sold at the Fair.</li>
-                <li>One (1) close-up photograph of your booth or a typical display).</li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>  
-    
-    <div class="common_asked_section sidebar_main_section">
-      <h1>Commonly asked questions</h1>
-      <div class="common_asked_content sidebar_section_content">
-        <ul>
-          <li><span>01.</span><p>The fair is located on the grounds of an old farm; the ground may be uneven.  The flooring of your booth may be grass, concrete, wood or dirt. Inside booths may be sheds, pavilions or buildings. Single booths at range in price from $185 to $275 depending on the amenities; the fees increase proportionally for double booths.</p></li>
-          <li><span>02.</span><p>Sell only the juried items listed in your Invitation/Contract.</p></li>
-          <li><span>03.</span><p>Each exhibitor is responsible for reporting 7% sales tax to Georgia State Revenue Commissioner; a  form will be included in your check-in packet when you arrive.</p></li>
-          <li><span>04.</span><p>Tents with guy lines are not permitted, and all tents must be securely weighted.</p></li>
-          <li><span>05.</span><p>Tents may not exceed 10’ 0” x 10’ 0” for a single space or 10’ 0 x 20’ 0’’ for a double booth.</p></li>
-          <li><span>06.</span><p>Exhibitors will provide all display props, lights, tables, chairs, tools and equipment necessary for assembling the booth.</p></li>
-          <li><span>07.</span><p>Display tables must be covered/skirted.</p></li>
-          <li><span>08.</span><p>Only compact florescent bulbs not exceeding 20 watts or LED equivalent are permitted.</p></li>
-          <li><span>09.</span><p>“Discounted”, “Marked Down”, “Reduced”, or “Close-Out” signs are not permitted.</p></li>
-          <li><span>10.</span><p>Exhibitors may unload and load adjacent to their booth during set-up and after closing.</p></li>
-          <li><span>11.</span><p>Exhibitor parking is adjacent to the Fair.</p></li>
-          <li><span>12.</span><p>RV Parking is limited and restricted to self-contained RV ‘s. Reservations requests are made on your Invitation/Contract.</p></li>
-          <li><span>13.</span><p>Street vendors in Gay during the Cotton Pickin’ Fair weekends are not associated with the Fair.</p></li>
-        </ul>
-      </div>
-    </div>     
+    {% section 'page-sidebar-guideline' %}
 
-    <div class="sidebar_buttons">
-      <a class="vendor_setup">Vontinue to vendor setup</a>
-      <a class="apply_person">Apply to the in-person fair</a>
-    </div>
+    {% section 'page-sidebar-questions' %}   
     
   </div>
 
-  <div class="page-sidebar-section">
-    <div class="sidebar-map">
-    
-    </div>
-    <div class="">
-    
-    </div>
-  </div>
+  {% include 'page-sidebar-section' %}
   
 </div>

@@ -1,0 +1,135 @@
+{% comment %}
+** Help / FAQ pages - custom view **
+- Page template
+- Uses blocks
+{% endcomment %}
+
+{% if section.blocks.size > 0 %}
+    {% for block in section.blocks %}
+        <div {{ block.shopify_attributes }} class="block__{{ block.type }} block__{{ block.id }}">
+
+            {% if block.type == "banner" %}
+                <!-- Banner with text -->  
+                {% include 'include-banner', type: 'block' %}                    
+
+            {% elsif block.type == "page" %}
+                <!-- Page -->
+                {% assign content_page = block.settings.content_page %}
+
+                <div class="page-policy-content">
+                    <div class="page-width">                        
+                        {{ pages[content_page].content }}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    {% endfor %}
+{% endif %}
+
+<script>
+$(window).load(function() {
+  $('.nav-tabs').delegate('li:not(.active)', 'click', function(evt) {
+     // evt.preventDefault();
+    $(this).addClass('active').siblings().removeClass('active')
+     .parents('.page-content--tabs').find('.tab-pane')
+     .hide().eq( $(this).index() ).fadeIn(170);
+  });
+
+  $(".support-faq-wrapper p").click(function(){
+        var active_content = $(this).parent();
+        active_content.toggleClass("expanded");
+        if (active_content.hasClass("expanded")){
+            active_content.find("span").fadeIn("slow");
+        }else{
+            active_content.find("span").fadeOut("slow");
+        }
+    });
+
+  // Select all links with hashes
+  $('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+});
+</script>
+
+{% schema %}
+
+{
+    "name": "Page | Help/FAQ",
+    "class": "page-policy-section page-faq-section",
+    "blocks": [      
+    {
+    "type": "banner",
+    "name": "Banner with text",
+    "settings": [
+        {
+        "type": "image_picker",
+        "id": "banner_image",
+        "label": "Banner Image"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Title"
+        },
+        {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description"
+        },
+        {
+            "type": "richtext",
+            "id": "description_html",
+            "label": "Description(HTML)",
+            "default": "<p></p>"
+        }
+    ]
+    },
+    {
+        "type": "page",
+        "name": "Page",
+        "settings": [
+        {
+            "type": "page",
+            "id": "content_page",
+            "label": "Content page"
+        }
+        ]
+    }
+    ]
+}
+    
+{% endschema %}

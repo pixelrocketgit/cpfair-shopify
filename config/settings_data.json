@@ -24,7 +24,7 @@
         "type": "header",
         "settings": {
           "align_logo": "left",
-          "logo": "shopify:\/\/shop_images\/CPFair-logo-_4x_aa3f2cb2-a89b-4459-ad1d-f07edec95032.png",
+          "logo": "shopify:\/\/shop_images\/Group_343.png",
           "logo_max_width": 172,
           "main_linklist": "main-menu",
           "main_linklist_2": "second-menu",
@@ -183,7 +183,7 @@
             "type": "text",
             "settings": {
               "title": "",
-              "logo": "shopify:\/\/shop_images\/CPFair-logo-_4x_aa3f2cb2-a89b-4459-ad1d-f07edec95032.png",
+              "logo": "shopify:\/\/shop_images\/Group_343.png",
               "text": ""
             }
           },
@@ -731,6 +731,769 @@
           "description": "",
           "description_html": "<p>Guidelines &amp; Application<\/p><p>Southeast Tourism Society Top Twenty Event<\/p><p>Founding Producer of Distinction, Georgia Tourism Foundation<\/p>"
         }
+      },
+      "page-policy-template": {
+        "type": "page-policy-template",
+        "blocks": {
+          "83cbade7-6c30-429a-a43c-76326827da8d": {
+            "type": "banner",
+            "settings": {
+              "banner_image": "shopify:\/\/shop_images\/CPFair-privacy-pages-banner.jpg",
+              "title": "Privacy policy",
+              "description": "Praesent vel porttitor lorem, eu tristique metus. Nulla facilisi. Phasellus fringilla vehicula nunc eget sollicitudin. Nunc cursus gravida purus id volutpat.",
+              "description_html": ""
+            }
+          },
+          "ea5a6f53-154d-47ac-9bd5-2e5daae9f1d6": {
+            "type": "page",
+            "settings": {
+              "content_page": "privacy-policy"
+            }
+          }
+        },
+        "block_order": [
+          "83cbade7-6c30-429a-a43c-76326827da8d",
+          "ea5a6f53-154d-47ac-9bd5-2e5daae9f1d6"
+        ],
+        "settings": {}
+      },
+      "banner-about": {
+        "type": "banner-about",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/image_1_2.png",
+          "title": "About Us",
+          "description": "Praesent vel porttitor lorem, eu tristique metus. Nulla facilisi. Phasellus fringilla vehicula nunc eget sollicitudin. Nunc cursus gravida purus id volutpat.",
+          "description_html": ""
+        }
+      },
+      "page-sidebar-guideline": {
+        "type": "page-sidebar-guideline",
+        "blocks": {
+          "e49a637b-db9e-43ae-aaab-99b616008f35": {
+            "type": "Content",
+            "settings": {
+              "number": "01",
+              "text": "",
+              "description_html": "<p>Commercial retail (buy\/sell) business are not allowed.<\/p>"
+            }
+          },
+          "c05fe033-f34b-478e-9c8b-db59888fac73": {
+            "type": "Content",
+            "settings": {
+              "number": "02",
+              "text": "",
+              "description_html": "<p>Food Vendors: Twenty-five (25) Food vendors  provide regional southern foods at The Cotton Pickin’ Fair.  First priority is given to our local nonprofit organizations (many of these organizations have been with us for over forty years).  If a nonprofit organization cannot meet our needs, we consider a professional food vendor; fees begin at $750.<\/p>"
+            }
+          },
+          "fed51cf0-8d1b-404d-87d5-1b873066358a": {
+            "type": "Content",
+            "settings": {
+              "number": "03",
+              "text": "",
+              "description_html": "<p>Applications for the May edition should be received by March 1 and August 1 for the October edition.<\/p>"
+            }
+          },
+          "afc9617e-c19e-4df7-9613-9504a6fbe4db": {
+            "type": "Content",
+            "settings": {
+              "number": "04",
+              "text": "",
+              "description_html": "<p>Applications may be submitted electronically or the form may be mailed via the USPS.<\/p>"
+            }
+          },
+          "10ab511c-dfe1-4eb3-9f9b-cdd1992439ec": {
+            "type": "Content",
+            "settings": {
+              "number": "05",
+              "text": "",
+              "description_html": "<p>Jury review is continuous, and applications submitted after the deadline will be considered to fill cancellations and specific merchandising requirements for the upcoming event.<\/p>"
+            }
+          },
+          "581ea85a-7157-4a8a-bed2-c6a354fac683": {
+            "type": "Content",
+            "settings": {
+              "number": "06",
+              "text": "",
+              "description_html": "<p>There are no application fees. Do not send money with the application.<\/p>"
+            }
+          },
+          "4e1c30a4-95b8-42fb-b8e9-f746ab1f54ae": {
+            "type": "Content",
+            "settings": {
+              "number": "07",
+              "text": "",
+              "description_html": "<p>An email notification of application status is normally sent within 30 days of receipt.   Applicants selected to participate in the Cotton Pickin’ Fair will receive an email Invitation\/Contract .<\/p>"
+            }
+          },
+          "34f26f43-4074-45cb-b9e7-5c17d29c47fe": {
+            "type": "Content",
+            "settings": {
+              "number": "08",
+              "text": "",
+              "description_html": "<p>The person named in the application must be present for both full days of the Fair.<\/p>"
+            }
+          },
+          "8666e3ad-d7cf-4232-8106-da68e706cdfd": {
+            "type": "Content",
+            "settings": {
+              "number": "09",
+              "text": "",
+              "description_html": "<p>Arts or Craft items offered for sale must be made by the applicant.<\/p>"
+            }
+          },
+          "37ead4b5-c6e5-4869-a7d7-48b34b66601c": {
+            "type": "Content",
+            "settings": {
+              "number": "10",
+              "text": "",
+              "description_html": "<p>Original art must meet or exceed 50% of offerings. Prints are permitted, but may not exceed 50% of offering.<\/p>"
+            }
+          },
+          "d38f814d-045e-4de0-9560-19830add9c41": {
+            "type": "Content",
+            "settings": {
+              "number": "11",
+              "text": "",
+              "description_html": "<p>Antique specialists are not allowed to sell crafts or reproductions in their booths.<\/p>"
+            }
+          },
+          "c6ed02a3-3b77-436e-af0b-9638dc126946": {
+            "type": "Content",
+            "settings": {
+              "number": "12",
+              "text": "",
+              "description_html": "<p>Gourmet Food applicants must have a current Cottage Food or Department of Agriculture License and if accepted to the Cotton Pickin’ Fair must post a copy of their license in their booth.<\/p>"
+            }
+          },
+          "0bf6d649-f1f7-4217-b5b3-0bbfc78e7c7a": {
+            "type": "Content",
+            "settings": {
+              "number": "13",
+              "text": "",
+              "description_html": "<p>Children’s activity applicants must have general liability insurance. If accepted Cotton Pickin’ Fairs, Inc. must be named as an Additional Insured, and a copy must be sent to our office.<\/p>"
+            }
+          },
+          "074d2fa3-6c63-4910-ab53-8f6a1b5a1315": {
+            "type": "Content",
+            "settings": {
+              "number": "14",
+              "text": "",
+              "description_html": "<div>\n<p>Submit 5 photographs; the size of the photograph is not to exceed 1 MB. All photographs become the property of Cotton Pickin’ Fairs, Inc.<\/p>\n<span>(*If you experience difficulty downsizing your photographs, you may send them in an email. Please include your name and contact information in the email.)<\/span>\n<ul>\n<li>One (1) photograph of the applicant at work on art or craft. Photograph must include the applicant, and show work-in- progress.<\/li>\n<li>Three (3) close-up photographs of products to be sold at the Fair.<\/li>\n<li>One (1) close-up photograph of your booth or a typical display.<\/li>\n<\/ul>\n<\/div>"
+            }
+          }
+        },
+        "block_order": [
+          "e49a637b-db9e-43ae-aaab-99b616008f35",
+          "c05fe033-f34b-478e-9c8b-db59888fac73",
+          "fed51cf0-8d1b-404d-87d5-1b873066358a",
+          "afc9617e-c19e-4df7-9613-9504a6fbe4db",
+          "10ab511c-dfe1-4eb3-9f9b-cdd1992439ec",
+          "581ea85a-7157-4a8a-bed2-c6a354fac683",
+          "4e1c30a4-95b8-42fb-b8e9-f746ab1f54ae",
+          "34f26f43-4074-45cb-b9e7-5c17d29c47fe",
+          "8666e3ad-d7cf-4232-8106-da68e706cdfd",
+          "37ead4b5-c6e5-4869-a7d7-48b34b66601c",
+          "d38f814d-045e-4de0-9560-19830add9c41",
+          "c6ed02a3-3b77-436e-af0b-9638dc126946",
+          "0bf6d649-f1f7-4217-b5b3-0bbfc78e7c7a",
+          "074d2fa3-6c63-4910-ab53-8f6a1b5a1315"
+        ],
+        "settings": {
+          "title": "Guidelines"
+        }
+      },
+      "page-sidebar-questions": {
+        "type": "page-sidebar-questions",
+        "blocks": {
+          "81a7b3a0-253f-4654-ba92-0e5e223fa161": {
+            "type": "Content",
+            "settings": {
+              "number": "01",
+              "description_html": "<p>The fair is located on the grounds of an old farm; the ground may be uneven.  The flooring of your booth may be grass, concrete, wood or dirt. Inside booths may be sheds, pavilions or buildings. Single booths at range in price from $185 to $275 depending on the amenities; the fees increase proportionally for double booths.<\/p>"
+            }
+          },
+          "4bb7a774-f091-45ec-9b1e-b79294e3a0b1": {
+            "type": "Content",
+            "settings": {
+              "number": "02",
+              "description_html": "<p>Sell only the juried items listed in your Invitation\/Contract.<\/p>"
+            }
+          },
+          "057ff68f-a7bc-4bd5-b1bb-f11abff92972": {
+            "type": "Content",
+            "settings": {
+              "number": "03",
+              "description_html": "<p>Each exhibitor is responsible for reporting 7% sales tax to Georgia State Revenue Commissioner; a  form will be included in your check-in packet when you arrive.<\/p>"
+            }
+          },
+          "1ef6fb36-8c29-431a-bf1c-46171cfb73a2": {
+            "type": "Content",
+            "settings": {
+              "number": "04",
+              "description_html": "<p>Tents with guy lines are not permitted, and all tents must be securely weighted.<\/p>"
+            }
+          },
+          "76571184-77c5-4967-96f3-17a5359380ef": {
+            "type": "Content",
+            "settings": {
+              "number": "05",
+              "description_html": "<p>Tents may not exceed 10’ 0” x 10’ 0” for a single space or 10’ 0 x 20’ 0’’ for a double booth.<\/p>"
+            }
+          },
+          "1a527d06-8457-4c34-966d-307a730da8a1": {
+            "type": "Content",
+            "settings": {
+              "number": "06",
+              "description_html": "<p>Exhibitors will provide all display props, lights, tables, chairs, tools and equipment necessary for assembling the booth.<\/p>"
+            }
+          },
+          "3e7fc4cc-10f8-4153-a886-390b1e1bd3e1": {
+            "type": "Content",
+            "settings": {
+              "number": "07",
+              "description_html": "<p>Display tables must be covered\/skirted.<\/p>"
+            }
+          },
+          "931d4552-1033-46d3-8e84-71107031e146": {
+            "type": "Content",
+            "settings": {
+              "number": "08",
+              "description_html": "<p>Only compact florescent bulbs not exceeding 20 watts or LED equivalent are permitted.<\/p>"
+            }
+          },
+          "b91d00fa-2caa-4285-98b3-1b88f6fd2ee3": {
+            "type": "Content",
+            "settings": {
+              "number": "09",
+              "description_html": "<p>“Discounted”, “Marked Down”, “Reduced”, or “Close-Out” signs are not permitted.<\/p>"
+            }
+          },
+          "96927415-779e-495d-9aa3-5664645863f9": {
+            "type": "Content",
+            "settings": {
+              "number": "10",
+              "description_html": "<p>Exhibitors may unload and load adjacent to their booth during set-up and after closing.<\/p>"
+            }
+          },
+          "a3af8efc-1b75-40c0-b2ef-571b8a755983": {
+            "type": "Content",
+            "settings": {
+              "number": "11",
+              "description_html": "<p>Exhibitor parking is adjacent to the Fair.<\/p>"
+            }
+          },
+          "c3aed49a-fe11-41b2-a83a-8fb7574a752b": {
+            "type": "Content",
+            "settings": {
+              "number": "12",
+              "description_html": "<p>RV Parking is limited and restricted to self-contained RV ‘s. Reservations requests are made on your Invitation\/Contract.<\/p>"
+            }
+          },
+          "c3875151-5e65-4799-9ead-71964a6dbad3": {
+            "type": "Content",
+            "settings": {
+              "number": "13",
+              "description_html": "<p>Street vendors in Gay during the Cotton Pickin’ Fair weekends are not associated with the Fair.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "81a7b3a0-253f-4654-ba92-0e5e223fa161",
+          "4bb7a774-f091-45ec-9b1e-b79294e3a0b1",
+          "057ff68f-a7bc-4bd5-b1bb-f11abff92972",
+          "1ef6fb36-8c29-431a-bf1c-46171cfb73a2",
+          "76571184-77c5-4967-96f3-17a5359380ef",
+          "1a527d06-8457-4c34-966d-307a730da8a1",
+          "3e7fc4cc-10f8-4153-a886-390b1e1bd3e1",
+          "931d4552-1033-46d3-8e84-71107031e146",
+          "b91d00fa-2caa-4285-98b3-1b88f6fd2ee3",
+          "96927415-779e-495d-9aa3-5664645863f9",
+          "a3af8efc-1b75-40c0-b2ef-571b8a755983",
+          "c3aed49a-fe11-41b2-a83a-8fb7574a752b",
+          "c3875151-5e65-4799-9ead-71964a6dbad3"
+        ],
+        "settings": {
+          "title": "Commonly asked questions"
+        }
+      },
+      "banner-contact": {
+        "type": "banner-contact",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/image_1_8.png",
+          "title": "Contact us",
+          "description": "Praesent vel porttitor lorem, eu tristique metus. Nulla facilisi. Phasellus fringilla vehicula nunc eget sollicitudin. Nunc cursus gravida purus id volutpat."
+        }
+      },
+      "page-reviews": {
+        "type": "page-reviews",
+        "blocks": {
+          "3a7668c8-29ba-48bf-a5e2-ae77ceee3f31": {
+            "type": "Feedback",
+            "settings": {
+              "customer_image": "shopify:\/\/shop_images\/Ellipse_16_9.png",
+              "customer": "Robert Fox",
+              "rating": "5.0 (323)",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor a sit ut viverra odio quam nulla. In libero arcu, sodales fringilla tellus sit morbi tempus in. Et volutpat risus, elit diam vitae ullamcorper. Tellus lectus pulvinar turpis lacus. Felis purus pulvinar dignissim odio. Leo tempus nulla porta velit cras duis.",
+              "additional_image_1": "shopify:\/\/shop_images\/Rectangle_256_3.png",
+              "additional_image_2": "shopify:\/\/shop_images\/Rectangle_256_4.png",
+              "additional_image_3": "shopify:\/\/shop_images\/Rectangle_256_5.png"
+            }
+          },
+          "5aa91d27-2fd5-4061-aa09-c17275e02522": {
+            "type": "Feedback",
+            "settings": {
+              "customer_image": "shopify:\/\/shop_images\/Ellipse_16_10.png",
+              "customer": "Theresa Webb",
+              "rating": "5.0 (323)",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus tempus non et lacus velit. Neque, sed viverra nunc fermentum ultricies odio. Vestibulum iaculis."
+            }
+          },
+          "0072cd32-3a4a-4e21-b24e-f0bc4aa20da0": {
+            "type": "Feedback",
+            "settings": {
+              "customer_image": "shopify:\/\/shop_images\/Ellipse_16_11.png",
+              "customer": "Esther Howard",
+              "rating": "5.0 (323)",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse etiam eros, habitant mollis lacus, elementum lectus id. Ac ultrices mi tellus adipiscing. Amet, cras in laoreet pretium, placerat arcu est elementum.",
+              "additional_image_1": "shopify:\/\/shop_images\/Rectangle_256_6.png",
+              "additional_image_2": "shopify:\/\/shop_images\/Rectangle_256_7.png",
+              "additional_image_3": "shopify:\/\/shop_images\/Rectangle_256_8.png"
+            }
+          },
+          "aeb84a7e-1fd3-4123-9485-a0d399ed314e": {
+            "type": "Feedback",
+            "settings": {
+              "customer_image": "shopify:\/\/shop_images\/Ellipse_16_13.png",
+              "customer": "Darrell Steward",
+              "rating": "5.0 (323)",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam proin elementum in ut sed. Ut cras consequat enim phasellus morbi.",
+              "additional_image_1": "shopify:\/\/shop_images\/Rectangle_256_9.png",
+              "additional_image_2": "shopify:\/\/shop_images\/Rectangle_256_10.png",
+              "additional_image_3": "shopify:\/\/shop_images\/Rectangle_256_11.png"
+            }
+          },
+          "3929cd2c-bd85-4c91-98da-b7989610b394": {
+            "type": "Feedback",
+            "settings": {
+              "customer_image": "shopify:\/\/shop_images\/Ellipse_16_14.png",
+              "customer": "Cody Fisher",
+              "rating": "5.0 (323)",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id eget adipiscing etiam nunc fusce ipsum, pellentesque turpis. Mi integer."
+            }
+          },
+          "279f3563-8bae-4886-b6b4-1970e0028dc3": {
+            "type": "Feedback",
+            "settings": {
+              "customer_image": "shopify:\/\/shop_images\/Ellipse_16_12.png",
+              "customer": "Ronald Richards",
+              "rating": "5.0 (323)",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio auctor id velit arcu eleifend. Ut amet cras eleifend ligula montes, nisl, duis. Faucibus sed velit sagittis euismod nec. Eget volutpat dui at vel volutpat, nec. Phasellus a feugiat proin proin volutpat ultrices bibendum feugiat habitant. Imperdiet."
+            }
+          },
+          "4625fc30-1701-40a4-9127-8d4342be79a2": {
+            "type": "Feedback",
+            "settings": {
+              "customer_image": "shopify:\/\/shop_images\/Ellipse_16_15.png",
+              "customer": "Guy Hawkins",
+              "rating": "5.0 (323)",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem porttitor purus fringilla sapien arcu at viverra purus arcu. Id consectetur iaculis eget ac ac amet id amet. Accumsan consequat a integer risus sed dictum orci. Risus, accumsan at tincidunt pretium."
+            }
+          },
+          "d9c9ad6f-9f91-496a-9406-beb27355ad30": {
+            "type": "Feedback",
+            "settings": {
+              "customer_image": "shopify:\/\/shop_images\/Ellipse_16_9_745dcb32-30f0-45ea-b764-cae12518baa9.png",
+              "customer": "Cameron Williamson",
+              "rating": "5.0 (323)",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio mi, non sed amet, dolor elit lectus. Diam, praesent arcu id sit nec. Vel placerat aliquam vulputate nisl sit mattis eu facilisi dui. Sollicitudin sit arcu diam tempor. Odio malesuada vitae feugiat facilisi tincidunt dolor pharetra, dictum proin.",
+              "additional_image_1": "shopify:\/\/shop_images\/Rectangle_256_3_78a6fa35-2ced-4e89-a52f-8d7771037b34.png",
+              "additional_image_2": "shopify:\/\/shop_images\/Rectangle_256_4_ca2ce24b-c059-499c-95f0-78ffa2a771be.png",
+              "additional_image_3": "shopify:\/\/shop_images\/Rectangle_256_5_ab0e8efc-b1bd-4cdd-b2af-2209aad941c7.png"
+            }
+          },
+          "8d0e6e28-f8f2-49c8-b4f4-dd8f179000d5": {
+            "type": "Feedback",
+            "settings": {
+              "customer_image": "shopify:\/\/shop_images\/Ellipse_16_10_a4cf33c5-1550-497e-94db-a2190f940101.png",
+              "customer": "Leslie Alexander",
+              "rating": "5.0 (323)",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra diam augue eu.",
+              "additional_image_1": "shopify:\/\/shop_images\/Rectangle_256_6_d03bbe81-1c21-4a67-b23e-7455af8c101b.png",
+              "additional_image_2": "shopify:\/\/shop_images\/Rectangle_256_7_be88a95f-c3b3-4234-9c29-8dafa3e40477.png",
+              "additional_image_3": "shopify:\/\/shop_images\/Rectangle_256_8_e0ffb089-cf68-4a37-9b59-d6060e76f181.png"
+            }
+          }
+        },
+        "block_order": [
+          "3a7668c8-29ba-48bf-a5e2-ae77ceee3f31",
+          "5aa91d27-2fd5-4061-aa09-c17275e02522",
+          "0072cd32-3a4a-4e21-b24e-f0bc4aa20da0",
+          "aeb84a7e-1fd3-4123-9485-a0d399ed314e",
+          "3929cd2c-bd85-4c91-98da-b7989610b394",
+          "279f3563-8bae-4886-b6b4-1970e0028dc3",
+          "4625fc30-1701-40a4-9127-8d4342be79a2",
+          "d9c9ad6f-9f91-496a-9406-beb27355ad30",
+          "8d0e6e28-f8f2-49c8-b4f4-dd8f179000d5"
+        ],
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/image_1_7.png",
+          "title": "Customer reviews",
+          "description": "Praesent vel porttitor lorem, eu tristique metus. Nulla facilisi. Phasellus fringilla vehicula nunc eget sollicitudin. Nunc cursus gravida purus id volutpat."
+        }
+      },
+      "banner-how": {
+        "type": "banner-how",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/image_1_3.png",
+          "title": "How it works",
+          "description": "Praesent vel porttitor lorem, eu tristique metus. Nulla facilisi. Phasellus fringilla vehicula nunc eget sollicitudin. Nunc cursus gravida purus id volutpat.",
+          "description_html": ""
+        }
+      },
+      "page-how-content": {
+        "type": "page-how-content",
+        "blocks": {
+          "9208aaee-68b2-424e-8db4-edf1db7c93fa": {
+            "type": "Content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Ellipse_16_4.png",
+              "title": "Lorem ipsum dolor",
+              "subtitle": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut<\/p>"
+            }
+          },
+          "7705283b-7ea5-4795-bc62-7ac8b4b6bb58": {
+            "type": "Content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Ellipse_16_5.png",
+              "title": "Lorem ipsum dolor",
+              "subtitle": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut<\/p>"
+            }
+          },
+          "2aff0332-34c1-4aac-95f3-0237f67d658a": {
+            "type": "Content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Ellipse_16_6.png",
+              "title": "Lorem ipsum dolor",
+              "subtitle": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut<\/p>"
+            }
+          },
+          "619ffe09-df45-4078-80cc-1c5aca357d70": {
+            "type": "Content",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Ellipse_16_7.png",
+              "title": "Lorem ipsum dolor",
+              "subtitle": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "9208aaee-68b2-424e-8db4-edf1db7c93fa",
+          "7705283b-7ea5-4795-bc62-7ac8b4b6bb58",
+          "2aff0332-34c1-4aac-95f3-0237f67d658a",
+          "619ffe09-df45-4078-80cc-1c5aca357d70"
+        ],
+        "settings": {
+          "title": "Lorem ipsum dolor",
+          "subtitle": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.<\/p>",
+          "extra_image": "shopify:\/\/shop_images\/cpfair-icon_1.png"
+        }
+      },
+      "page-how-questions": {
+        "type": "page-how-questions",
+        "blocks": {
+          "d1467500-3e2e-4aa4-a77e-af2ade5b86c4": {
+            "type": "Question",
+            "settings": {
+              "title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis?<\/p>",
+              "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum facilisis eros, quam adipiscing nam. In venenatis et proin sed consectetur. Mattis est adipiscing eget vel vulputate. Eu ac quis neque amet. Commodo adipiscing sed diam enim nec duis et. Dignissim gravida euismod.<\/p>"
+            }
+          },
+          "54f5a604-2fc9-4c47-be4a-af93ace1e187": {
+            "type": "Question",
+            "settings": {
+              "title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing?<\/p>",
+              "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare pellentesque mauris, nibh metus id consectetur tortor morbi. Dolor felis tempor.<\/p>"
+            }
+          },
+          "466df5e4-e561-4633-9bb6-b8d7968e1776": {
+            "type": "Question",
+            "settings": {
+              "title": "<p>Lorem ipsum dolor sit amet?<\/p>",
+              "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et enim platea lectus quis. Iaculis faucibus habitant rutrum rhoncus facilisis cursus fermentum. Ut malesuada ac in suspendisse. Donec nisl vitae amet, sed risus pretium sagittis. Erat enim vulputate fermentum egestas accumsan. Parturient erat ullamcorper donec nulla non feugiat massa turpis.<\/p>"
+            }
+          },
+          "4ccbb475-a0fb-4b4f-a62c-71424c2c498d": {
+            "type": "Question",
+            "settings": {
+              "title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis?<\/p>",
+              "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suscipit libero quam ipsum bibendum etiam. Fermentum at pulvinar volutpat arcu, risus. Faucibus id erat etiam vulputate massa ac. Quis mauris enim nec condimentum facilisis arcu sit et pretium. Semper tempor velit vel tincidunt. <\/p>"
+            }
+          },
+          "e40244dd-9df1-4650-b275-f43c3df5c54c": {
+            "type": "Question",
+            "settings": {
+              "title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing?<\/p>",
+              "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum diam ultricies odio nam. Ornare massa fermentum eget euismod egestas ac.<\/p>"
+            }
+          },
+          "29705279-c5bb-4ed6-9e16-72bd32e612fa": {
+            "type": "Question",
+            "settings": {
+              "title": "<p>Lorem ipsum dolor sit amet?<\/p>",
+              "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit consectetur varius gravida sit. Vestibulum sed mauris rhoncus fermentum tellus eu. Nulla dolor risus, quis risus purus. Ultrices pretium mauris quam bibendum dignissim vel sit quam. Risus, lectus nisl, est morbi sit nam facilisi dolor. Vitae est ullamcorper duis nulla mattis aenean elementum commodo, convallis. Mi morbi ac et, ullamcorper porttitor. Orci vitae amet.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "d1467500-3e2e-4aa4-a77e-af2ade5b86c4",
+          "54f5a604-2fc9-4c47-be4a-af93ace1e187",
+          "466df5e4-e561-4633-9bb6-b8d7968e1776",
+          "4ccbb475-a0fb-4b4f-a62c-71424c2c498d",
+          "e40244dd-9df1-4650-b275-f43c3df5c54c",
+          "29705279-c5bb-4ed6-9e16-72bd32e612fa"
+        ],
+        "settings": {
+          "title": "Frequently asked questions"
+        }
+      },
+      "banner-store": {
+        "type": "banner-store",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/image_1_4.png",
+          "title": "Online store",
+          "description": "Praesent vel porttitor lorem, eu tristique metus. Nulla facilisi. Phasellus fringilla vehicula nunc eget sollicitudin. Nunc cursus gravida purus id volutpat.",
+          "description_html": ""
+        }
+      },
+      "feature-row-page-store": {
+        "type": "feature-row-page-store",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Rectangle_256_2.png",
+          "layout": "right",
+          "title": "Lorem ipsum dolor sit amet",
+          "subtitle": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis?<\/p>",
+          "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum facilisis eros, quam adipiscing nam. In venenatis et proin sed consectetur. Mattis est adipiscing eget vel vulputate. Eu ac quis neque amet. Commodo adipiscing sed diam enim nec duis et. Dignissim gravida euismod.<\/p>",
+          "button_label": ""
+        }
+      },
+      "featured-blog-store": {
+        "type": "featured-blog-store",
+        "settings": {
+          "title": "Blog posts",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.",
+          "blog": "events",
+          "post_limit": 4,
+          "blog_show_author": false,
+          "blog_show_date": true,
+          "show_view_all": false
+        }
+      },
+      "slideshow-our-comunity": {
+        "type": "slideshow-our-comunity",
+        "blocks": {
+          "ff82906c-adc6-40c2-911b-310e93151cf1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vitolda-klein-WsztitGinNU-unsplash_1.png",
+              "alignment": "center center",
+              "slide_title": "Reserve your shopping time for Thursday and get FREE admission tickets for walk-in shopping Friday-Sunday",
+              "subheading": "Reserve your shopping time for Thursday and get FREE admission tickets for walk-in shopping Friday-Sunday",
+              "button_label": ""
+            }
+          },
+          "6babc06a-44e7-4ad5-834a-cd008307de9f": {
+            "type": "image",
+            "settings": {
+              "alignment": "center center",
+              "slide_title": "Image slide",
+              "subheading": "Tell your brand's story through images",
+              "button_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "ff82906c-adc6-40c2-911b-310e93151cf1",
+          "6babc06a-44e7-4ad5-834a-cd008307de9f"
+        ],
+        "settings": {
+          "slideshow_height": "small",
+          "text_size": "medium",
+          "text_alignment": "center center",
+          "section_title": "Helping Our Community",
+          "show_overlay": true,
+          "autorotate": false,
+          "autorotate_speed": 5
+        }
+      },
+      "recently-viewed": {
+        "type": "recently-viewed",
+        "settings": {}
+      },
+      "banner-program": {
+        "type": "banner-program",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/image_1_5.png",
+          "title": "Program",
+          "description": "91st Edition of The Cotton Pickin’ Fair. Sound & Stage Management by Dan Kilgore.",
+          "description_html": "",
+          "button_text": "Download the October, 2019 Program (PDF)"
+        }
+      },
+      "banner-support": {
+        "type": "banner-support",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/image_1_9.png",
+          "title": "Hi. How can we help?",
+          "description": "Praesent vel porttitor lorem, eu tristique metus. Nulla facilisi. Phasellus fringilla vehicula nunc eget sollicitudin. Nunc cursus gravida purus id volutpat."
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "blog": "news",
+          "banner_image": "shopify:\/\/shop_images\/image_1_10.png",
+          "title": "Blog",
+          "description": "Read up on our latest announcements, thoughts on equity compensation, product updates, and strategies for your startup equity.",
+          "blog_show_author": true,
+          "blog_show_date": true
+        }
+      },
+      "blog-template-press": {
+        "type": "blog-template-press",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/image_1_11.png",
+          "title": "Press",
+          "description": "See what others are saying about us. Need more info or want to organize an interview?",
+          "button_text": "Let's talk",
+          "blog_show_author": true,
+          "blog_show_date": true
+        }
+      },
+      "banner-legal": {
+        "type": "banner-legal",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/image_1_5e5c3204-05b9-4c97-b8d1-7618cb788f99.png",
+          "title": "Legal",
+          "description": "Read up on our latest announcements, thoughts on equity compensation, product updates, and strategies for your startup equity."
+        }
+      },
+      "newsletter-template": {
+        "type": "newsletter-template",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/image_1_2_8e6a91f7-667c-48d0-9ca2-40043f6ee9f2.png",
+          "banner_title": "Newsletters",
+          "banner_description": "Read up on our latest announcements, thoughts on equity compensation, product updates, and strategies for your startup equity.",
+          "section_title": "Subscribe for newsletter",
+          "subheading": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl tempus bibendum diam non, id tempus. In elementum duis enim, sit.<\/p>",
+          "background_image": "shopify:\/\/shop_images\/vitolda-klein-WsztitGinNU-unsplash_1_ca742fdf-78b6-41ef-a5ad-fe7926fc46cf.png"
+        }
+      },
+      "page-directions-template": {
+        "type": "page-directions-template",
+        "blocks": {
+          "905ff18f-cfc8-4bd2-83de-969ffaff46d4": {
+            "type": "banner",
+            "settings": {
+              "banner_image": "shopify:\/\/shop_images\/CPFair-directions-map-min.jpg",
+              "title": "Location",
+              "subtitle": "<p>The Cotton Pickin’ Fair is held in Gay, Georgia.<\/p>",
+              "description_html": "<p>Gay is located 39 miles south of the Atlanta Airport, 50 miles north of Columbus, GA, on GA Hwy 85.<\/p>"
+            }
+          },
+          "1fe3291a-bce2-4452-9d32-338cb9ff6f50": {
+            "type": "page",
+            "settings": {
+              "content_page": "directions"
+            }
+          },
+          "d20011c0-8b0d-4c20-8aa5-a413fc79b07c": {
+            "type": "sidebar-cart",
+            "settings": {
+              "content_page": ""
+            }
+          }
+        },
+        "block_order": [
+          "905ff18f-cfc8-4bd2-83de-969ffaff46d4",
+          "1fe3291a-bce2-4452-9d32-338cb9ff6f50",
+          "d20011c0-8b0d-4c20-8aa5-a413fc79b07c"
+        ],
+        "settings": {}
+      },
+      "page-help-template": {
+        "type": "page-help-template",
+        "blocks": {
+          "eeb83d5b-c686-430f-946b-ad92c7c776a7": {
+            "type": "banner",
+            "settings": {
+              "banner_image": "shopify:\/\/shop_images\/CPFair-New-account-help-page-banner.jpg",
+              "title": "New account help",
+              "description": "Praesent vel porttitor lorem, eu tristique metus. Nulla facilisi. Phasellus fringilla vehicula nunc eget sollicitudin. Nunc cursus gravida purus id volutpat.",
+              "description_html": ""
+            }
+          },
+          "91fd1580-dae8-496e-92e1-362b6b3e3f8e": {
+            "type": "page",
+            "settings": {
+              "content_page": "new-account-help"
+            }
+          }
+        },
+        "block_order": [
+          "eeb83d5b-c686-430f-946b-ad92c7c776a7",
+          "91fd1580-dae8-496e-92e1-362b6b3e3f8e"
+        ],
+        "settings": {}
+      },
+      "page-refund-template": {
+        "type": "page-refund-template",
+        "blocks": {
+          "5ad9df67-b5a5-4f38-8f8e-1f9666920dfd": {
+            "type": "banner",
+            "settings": {
+              "banner_image": "shopify:\/\/shop_images\/CPFair-privacy-pages-banner.jpg",
+              "title": "Refund policy",
+              "description": "Praesent vel porttitor lorem, eu tristique metus. Nulla facilisi. Phasellus fringilla vehicula nunc eget sollicitudin. Nunc cursus gravida purus id volutpat.",
+              "description_html": ""
+            }
+          },
+          "cd9d456f-9d52-439f-bc0c-a6502163ca5a": {
+            "type": "page",
+            "settings": {
+              "content_page": "refund-policy"
+            }
+          }
+        },
+        "block_order": [
+          "5ad9df67-b5a5-4f38-8f8e-1f9666920dfd",
+          "cd9d456f-9d52-439f-bc0c-a6502163ca5a"
+        ],
+        "settings": {}
+      },
+      "page-faq-template": {
+        "type": "page-faq-template",
+        "blocks": {
+          "8bdde9c3-ca7d-4fbf-a073-dd6b09f8d3fd": {
+            "type": "banner",
+            "settings": {
+              "banner_image": "shopify:\/\/shop_images\/CPFair-faq-page-banner.jpg",
+              "title": "FAQ",
+              "description": "Praesent vel porttitor lorem, eu tristique metus. Nulla facilisi. Phasellus fringilla vehicula nunc eget sollicitudin. Nunc cursus gravida purus id volutpat.",
+              "description_html": ""
+            }
+          },
+          "8ec9c539-4d59-4d0b-8adb-644bfed1becb": {
+            "type": "page",
+            "settings": {
+              "content_page": "faq"
+            }
+          }
+        },
+        "block_order": [
+          "8bdde9c3-ca7d-4fbf-a073-dd6b09f8d3fd",
+          "8ec9c539-4d59-4d0b-8adb-644bfed1becb"
+        ],
+        "settings": {}
       }
     },
     "content_for_index": [
@@ -1069,7 +1832,6 @@
         "blog-template": {
           "type": "blog-template",
           "settings": {
-            "layout": "grid",
             "blog_show_author": true,
             "blog_show_date": false
           }
