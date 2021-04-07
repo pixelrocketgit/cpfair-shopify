@@ -1,0 +1,31 @@
+{% include 'default-banner', section: section %}
+
+{% schema %}
+  {
+    "name": "Banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "banner_image",
+        "label": "Banner Image"
+      },
+	  {
+         "type": "text",
+         "id": "title",
+         "label": "Title",
+         "default": "Title"
+      },
+      {
+         "type": "textarea",
+         "id": "description",
+         "label": "Description"
+      },
+	  {
+         "type": "richtext",
+         "id": "description_html",
+         "label": "Description(HTML)",
+		 "default": "<p></p>"
+      }
+	]
+  }
+{% endschema %}

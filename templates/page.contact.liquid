@@ -1,6 +1,39 @@
-<div class="page-width">
-  <div class="grid">
-    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+{% section 'banner-contact' %}
+
+<div class="page-width page-contact">
+  <div class="grid page-contact-wrapper">
+    <div class="grid__item medium-up--one-third">
+      <div class="contact-sidebar">
+        <div class="contact-sidebar-heading">
+          <h2>The Cotton Pickin’ Fair</h2>
+        </div>
+        <div class="contact-sidebar-block">
+              <img src="https://cdn.shopify.com/s/files/1/0539/1908/8815/files/Vector_3_e845ab3d-358c-45dc-aed2-c20ddbbf9862.png?v=1617395272">
+            <div class="direction_content">
+              <p>P.O. Box 1<br/>18830 Hwy 85, Gay, GA 30218</p>
+              <p class="direction_button">Directions to fairgrounds<a><i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            </div>
+        </div> 
+        <div class="contact-sidebar-block">
+              <img src="https://cdn.shopify.com/s/files/1/0539/1908/8815/files/Vector_1_e01b90e0-800c-44e4-9f77-1e1b420a5ef1.png?v=1617394712">
+              <p>(706) 538-6814</p>
+        </div>  
+        <div class="contact-sidebar-block">
+              <img src="https://cdn.shopify.com/s/files/1/0539/1908/8815/files/Vector_2_46d600c7-fc22-47a7-8451-be67b716639d.png?v=1617394712">
+              <p>info@cpfair.org</p>
+        </div> 
+        <div class="social-block">
+              <a class="social_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a class="social_instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div> 
+      </div>      
+    </div>
+
+
+    <div class="grid__item medium-up--two-thirds">
+      {% comment %}
       <div class="section-header text-center">
         <h1>{{ page.title }}</h1>
       </div>
@@ -10,48 +43,48 @@
           {{ page.content }}
         </div>
       {% endif %}
+      {% endcomment %}
 
       <div class="contact-form form-vertical">
         {%- assign formId = 'ContactForm' -%}
         {% form 'contact', id: formId %}
           {% include 'form-status', form: form, form_id: formId %}
 
-          <div class="grid grid--half-gutters">
-            <div class="grid__item medium-up--one-half">
-              <label for="{{ formId }}-name">{{ 'contact.form.name' | t }}</label>
-              <input type="text" id="{{ formId }}-name" name="contact[{{ 'contact.form.name' | t }}]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}">
-            </div>
-            <div class="grid__item medium-up--one-half">
-              <label for="{{ formId }}-email">{{ 'contact.form.email' | t }} <span aria-hidden="true">*</span></label>
-              <input
-                type="email"
-                id="{{ formId }}-email"
-                name="contact[email]"
-                autocorrect="off"
-                autocapitalize="off"
-                value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
-                aria-required="true"
-                {%- if form.errors contains 'email' -%}
-                  class="input--error"
-                  aria-invalid="true"
-                  aria-describedby="{{ formId }}-email-error"
-                {%- endif -%}
-                >
-              {%- if form.errors contains 'email' -%}
-                <span id="{{ formId}}-email-error" class="input-error-message">
-                  <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
-                  {% include 'icon-error' %}
-                  <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
-                </span>
-              {%- endif -%}
-            </div>
-          </div>
+          <label for="{{ formId }}-name">{{ 'contact.form.name' | t }}</label>
+          <input type="text" id="{{ formId }}-name" name="contact[{{ 'contact.form.name' | t }}]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="Your name">
+
+          <label for="{{ formId }}-email">{{ 'contact.form.email' | t }} {% comment %}<span aria-hidden="true">*</span>{% endcomment %}</label>
+          <input
+            type="email"
+            id="{{ formId }}-email"
+            name="contact[email]"
+            autocorrect="off"
+            autocapitalize="off"
+            placeholder="Your email"
+            value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+            aria-required="true"
+            {%- if form.errors contains 'email' -%}
+              class="input--error"
+              aria-invalid="true"
+              aria-describedby="{{ formId }}-email-error"
+            {%- endif -%}
+            >
+          {%- if form.errors contains 'email' -%}
+            <span id="{{ formId}}-email-error" class="input-error-message">
+              <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+              {% include 'icon-error' %}
+              <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+            </span>
+          {%- endif -%}
 
           <label for="{{ formId }}-phone">{{ 'contact.form.phone' | t }}</label>
-          <input type="tel" id="{{ formId }}-phone" name="contact[{{ 'contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+          <input type="tel" id="{{ formId }}-phone" name="contact[{{ 'contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="Eg.812345678">
+
+          <label for="{{ formId }}-subject">Subject</label>
+          <input type="text" id="{{ formId }}-subject" name="contact[subject]" value="{% if form[subject] %}{{ form[subject] }}{% elsif customer %}{{ customer.subject }}{% endif %}" placeholder="Subject">
 
           <label for="{{ formId }}-message">{{ 'contact.form.message' | t }}</label>
-          <textarea rows="10" id="{{ formId }}-message" name="contact[{{ 'contact.form.message' | t }}]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+          <textarea rows="10" id="{{ formId }}-message" name="contact[{{ 'contact.form.message' | t }}]" placeholder="Your message">{% if form.body %}{{ form.body }}{% endif %}</textarea>
 
           <input type="submit" class="btn" value="{{ 'contact.form.submit' | t }}">
 
@@ -60,3 +93,4 @@
     </div>
   </div>
 </div>
+

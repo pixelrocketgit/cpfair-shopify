@@ -11,32 +11,35 @@
   {% unless paginate.previous.is_link %}
     <li aria-hidden="true">
       <button class="btn btn--tertiary btn--narrow" disabled>
-        {% include 'icon-arrow-left' %}
+        {% include 'icon-chevron-left' %}
         <span class="icon__fallback-text">{{ 'general.pagination.previous' | t }}</span>
       </button>
     </li>
     {% else %}
     <li>
       <a href="{{ paginate.previous.url }}" class="btn btn--tertiary btn--narrow">
-        {% include 'icon-arrow-left' %}
+        {% include 'icon-chevron-left' %}
         <span class="icon__fallback-text">{{ 'general.pagination.previous' | t }}</span>
       </a>
     </li>
   {% endunless %}
+  {{ paginate | default_pagination }}
+  {% comment %}
   <li class="pagination__text">
     {{ 'general.pagination.current_page' | t: current: paginate.current_page, total: paginate.pages }}
   </li>
+  {% endcomment %}
   {% unless paginate.next.is_link %}
     <li aria-hidden="true">
       <button class="btn btn--tertiary btn--narrow" disabled>
-        {% include 'icon-arrow-right' %}
+        {% include 'icon-chevron-right' %}
         <span class="icon__fallback-text">{{ 'general.pagination.next' | t }}</span>
       </button>
     </li>
   {% else %}
     <li>
       <a href="{{ paginate.next.url }}" class="btn btn--tertiary btn--narrow">
-        {% include 'icon-arrow-right' %}
+        {% include 'icon-chevron-right' %}
         <span class="icon__fallback-text">{{ 'general.pagination.next' | t }}</span>
       </a>
     </li>

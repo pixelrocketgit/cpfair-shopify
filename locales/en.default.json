@@ -270,8 +270,8 @@
       "delete_confirm": "Are you sure you wish to delete this address?"
     },
     "login": {
-      "title": "Login",
-      "email": "Email",
+      "title": "Sign in",
+      "email": "Email address",
       "password": "Password",
       "stay_signed_in": "Stay signed in",
       "forgot_password": "Forgot your password?",
@@ -326,7 +326,7 @@
       "submit": "Reset Password"
     },
     "register": {
-      "title": "Create Account",
+      "title": "Sign up",
       "first_name": "First Name",
       "last_name": "Last Name",
       "email": "Email",
@@ -366,7 +366,7 @@
       "account": "Account",
       "log_out": "Log out",
       "log_in": "Log in",
-      "create_account": "Create account",
+      "create_account": "Sign up",
       "dont_have_account": "Don't have an account?",
       "already_have_account": "Already have an account?"
     },
@@ -421,6 +421,11 @@
       "remaining_html": "{{ balance }} left",
       "add_to_apple_wallet": "Add to Apple Wallet",
       "qr_image_alt": "QR code — scan to redeem gift card"
+    }
+  },
+  "shopify": {
+    "page_titles": {
+      "create_account": "Sign in"
     }
   }
 }

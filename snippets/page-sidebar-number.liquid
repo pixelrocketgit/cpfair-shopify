@@ -1,0 +1,17 @@
+<div class="sidebar_main_section">
+  <h1>{{ section.settings.title }}</h1>
+  <div class="common_asked_content sidebar_section_content">
+    <ul>
+      {% for block in section.blocks %}
+        <li>
+        	<span class="index_block">{{ block.settings.number }}.</span>
+        	{% if block.settings.description_html != blank %}
+        		{{ block.settings.description_html }}
+        	{% else %}
+        		{{ block.settings.text }}
+        	{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

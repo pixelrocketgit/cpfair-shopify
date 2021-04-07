@@ -1,0 +1,17 @@
+<div class="banner-container banner-container-button" style="background-image: url('{{ section.settings.banner_image | img_url:'master' }}')">
+  <div class="banner-content-wrapper">
+    <div class="container page-width">
+      <div class="banner-content">
+        <h1>{{ section.settings.title }}</h1>
+        {% if section.settings.description_html != blank %}
+        	{{section.settings.description_html}}
+        {% else %}
+        	<p>{{ section.settings.description }}</p>
+        {% endif %}
+        {% if section.settings.button_text != blank %}
+          <a href="{{ section.settings.button_url }}">{{ section.settings.button_text }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
